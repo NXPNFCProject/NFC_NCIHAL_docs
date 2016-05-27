@@ -769,6 +769,10 @@ type="text/css">
   <a href="../../../../reference/com/android/internal/widget/package-summary.html">com.android.internal.widget</a></li>
     <li class="api apilevel-">
   <a href="../../../../reference/com/android/test/runner/package-summary.html">com.android.test.runner</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../reference/com/nxp/eseclient/package-summary.html">com.nxp.eseclient</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../reference/com/nxp/intf/package-summary.html">com.nxp.intf</a></li>
     <li class="selected api apilevel-">
   <a href="../../../../reference/com/nxp/nfc/package-summary.html">com.nxp.nfc</a></li>
     <li class="api apilevel-">
@@ -928,9 +932,23 @@ type="text/css">
             <ul>
               
               
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/INfcDta.html">INfcDta</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/INfcVzw.html">INfcVzw</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/INxpNfcAccessExtras.html">INxpNfcAccessExtras</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/INxpNfcAdapter.html">INxpNfcAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/INxpNfcAdapterExtras.html">INxpNfcAdapterExtras</a></li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
+          <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/INfcDta.Stub.html">INfcDta.Stub</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/INfcVzw.Stub.html">INfcVzw.Stub</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/INxpNfcAccessExtras.Stub.html">INxpNfcAccessExtras.Stub</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/INxpNfcAdapter.Stub.html">INxpNfcAdapter.Stub</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/INxpNfcAdapterExtras.Stub.html">INxpNfcAdapterExtras.Stub</a></li>
           <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/NfcDta.html">NfcDta</a></li>
           <li class="api apilevel-"><a href="../../../../reference/com/nxp/nfc/NxpConstants.html">NxpConstants</a></li>
           <li class="selected api apilevel-"><a href="../../../../reference/com/nxp/nfc/NxpNfcAdapter.html">NxpNfcAdapter</a></li>
@@ -1345,6 +1363,30 @@ Summary:
             
             
             
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/nxp/nfc/NxpNfcAdapter.html#getCommittedAidRoutingTableSize()">getCommittedAidRoutingTableSize</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">
+          This api is called by applications to get the size of AID data which is already committed
+ to routing table in NFCC.
+          
+    
+
+        </div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
             <a href="../../../../reference/java/lang/String.html">String</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
@@ -1362,7 +1404,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1376,6 +1418,118 @@ Summary:
         
         <div class="jd-descrdiv">
           Get the current NFCC firware version.
+          
+    
+
+        </div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/nxp/nfc/NxpNfcAdapter.html#getMaxAidRoutingTableSize()">getMaxAidRoutingTableSize</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">
+          This api is called by applications to get the maximum routing table for AID registration
+ The returned value doesn't provide the current remaining size available for AID.
+          
+    
+
+        </div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../reference/com/nxp/nfc/INxpNfcAccessExtras.html">INxpNfcAccessExtras</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/nxp/nfc/NxpNfcAdapter.html#getNxpNfcAccessExtras(java.lang.String)">getNxpNfcAccessExtras</a></span>(<a href="../../../../reference/java/lang/String.html">String</a> pkg)</nobr>
+        
+        <div class="jd-descrdiv">
+          Get the handle to an INxpNfcAccessExtras Interface
+
+          
+    
+
+        </div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            synchronized
+            
+            static
+            
+            <a href="../../../../reference/com/nxp/nfc/NxpNfcAdapter.html">NxpNfcAdapter</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/nxp/nfc/NxpNfcAdapter.html#getNxpNfcAdapter(android.nfc.NfcAdapter)">getNxpNfcAdapter</a></span>(<a href="../../../../reference/android/nfc/NfcAdapter.html">NfcAdapter</a> adapter)</nobr>
+        
+        <div class="jd-descrdiv">
+          Returns the NxpNfcAdapter for application context,
+ or throws if NFC is not available.
+          
+    
+
+        </div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../reference/com/nxp/nfc/INxpNfcAdapterExtras.html">INxpNfcAdapterExtras</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/nxp/nfc/NxpNfcAdapter.html#getNxpNfcAdapterExtrasInterface(android.nfc.INfcAdapterExtras)">getNxpNfcAdapterExtrasInterface</a></span>(<a href="../../../../reference/android/nfc/INfcAdapterExtras.html">INfcAdapterExtras</a> extras)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../reference/com/nxp/nfc/gsma/internal/INxpNfcController.html">INxpNfcController</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/nxp/nfc/NxpNfcAdapter.html#getNxpNfcControllerInterface()">getNxpNfcControllerInterface</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">
+          Get the handle to an INxpNfcController Interface
+
           
     
 
@@ -1424,6 +1578,30 @@ Summary:
         <div class="jd-descrdiv">
           Select the default Secure Element to be used in Card Emulation mode
  <p>Requires <code><a href="../../../../reference/android/Manifest.permission.html#NFC">NFC</a></code> permission.
+          
+    
+
+        </div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/nxp/nfc/NxpNfcAdapter.html#updateServiceState(java.util.Map<java.lang.String, java.lang.Boolean>)">updateServiceState</a></span>(<a href="../../../../reference/java/util/Map.html">Map</a>&lt;<a href="../../../../reference/java/lang/String.html">String</a>,&nbsp;<a href="../../../../reference/java/lang/Boolean.html">Boolean</a>&gt; serviceState)</nobr>
+        
+        <div class="jd-descrdiv">
+          This api is called by applications to update the service state of card emualation
+ services.
           
     
 
@@ -2120,6 +2298,54 @@ From class
 </div>
 
 
+<A NAME="getCommittedAidRoutingTableSize()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getCommittedAidRoutingTableSize</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+    
+
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This api is called by applications to get the size of AID data which is already committed
+ to routing table in NFCC.
+ <p>Requires <code><a href="../../../../reference/android/Manifest.permission.html#NFC">NFC</a></code> permission.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>occupied size of routing table for AID registrations.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../reference/java/io/IOException.html">IOException</a></td>
+            <td>if any exception occurs while retrieving the size.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="getDefaultSelectedSecureElement(java.lang.String)"></A>
 
 <div class="jd-details api apilevel-"> 
@@ -2208,6 +2434,187 @@ From class
         </tr>
       </table>
   </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMaxAidRoutingTableSize()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMaxAidRoutingTableSize</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+    
+
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This api is called by applications to get the maximum routing table for AID registration
+ The returned value doesn't provide the current remaining size available for AID.
+ This value depends on the size available in NFCC and is constant.
+ <p>Requires <code><a href="../../../../reference/android/Manifest.permission.html#NFC">NFC</a></code> permission.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>maximum routing table size for AID registration.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../reference/java/io/IOException.html">IOException</a></td>
+            <td>if any exception occurs while retrieving the size.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getNxpNfcAccessExtras(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../reference/com/nxp/nfc/INxpNfcAccessExtras.html">INxpNfcAccessExtras</a>
+      </span>
+      <span class="sympad">getNxpNfcAccessExtras</span>
+      <span class="normal">(<a href="../../../../reference/java/lang/String.html">String</a> pkg)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+    
+
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the handle to an INxpNfcAccessExtras Interface
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getNxpNfcAdapter(android.nfc.NfcAdapter)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+        synchronized 
+        <a href="../../../../reference/com/nxp/nfc/NxpNfcAdapter.html">NxpNfcAdapter</a>
+      </span>
+      <span class="sympad">getNxpNfcAdapter</span>
+      <span class="normal">(<a href="../../../../reference/android/nfc/NfcAdapter.html">NfcAdapter</a> adapter)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+    
+
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the NxpNfcAdapter for application context,
+ or throws if NFC is not available.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getNxpNfcAdapterExtrasInterface(android.nfc.INfcAdapterExtras)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../reference/com/nxp/nfc/INxpNfcAdapterExtras.html">INxpNfcAdapterExtras</a>
+      </span>
+      <span class="sympad">getNxpNfcAdapterExtrasInterface</span>
+      <span class="normal">(<a href="../../../../reference/android/nfc/INfcAdapterExtras.html">INfcAdapterExtras</a> extras)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+    
+
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getNxpNfcControllerInterface()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../reference/com/nxp/nfc/gsma/internal/INxpNfcController.html">INxpNfcController</a>
+      </span>
+      <span class="sympad">getNxpNfcControllerInterface</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+    
+
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the handle to an INxpNfcController Interface
+</p></div>
 
     </div>
 </div>
@@ -2328,6 +2735,75 @@ From class
         <tr>
             <th><a href="../../../../reference/java/io/IOException.html">IOException</a></td>
             <td>If a failure occurred during the Secure Element selection
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="updateServiceState(java.util.Map<java.lang.String, java.lang.Boolean>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">updateServiceState</span>
+      <span class="normal">(<a href="../../../../reference/java/util/Map.html">Map</a>&lt;<a href="../../../../reference/java/lang/String.html">String</a>,&nbsp;<a href="../../../../reference/java/lang/Boolean.html">Boolean</a>&gt; serviceState)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+    
+
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This api is called by applications to update the service state of card emualation
+ services.
+ <p>This api is implemented for  <code><a href="../../../../reference/android/nfc/cardemulation/CardEmulation.html#CATEGORY_OTHER">CATEGORY_OTHER</a></code>.
+ <p>Requires <code><a href="../../../../reference/android/Manifest.permission.html#NFC">NFC</a></code> permission.<ul>
+ <li>This api should be called only when the intent AID routing
+     table full is sent by NfcService.
+ <li>The service state change is persistent for particular UserId.
+ <li>The service state is written to the Xml and read
+     before every routing table  change.
+ <li>If there is any change in routing table  the routing table is updated to NFCC
+     after calling this api.
+ </ul></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>serviceState</td>
+          <td>Map of ServiceName and state of service.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>whether  the update of Card Emulation services is
+          success or not.
+          0xFF - failure
+          0x00 - success</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../reference/java/io/IOException.html">IOException</a></td>
+            <td>if any exception occurs during the service state change.
 </td>
         </tr>
       </table>

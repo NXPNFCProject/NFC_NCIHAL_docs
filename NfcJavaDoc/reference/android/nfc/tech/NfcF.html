@@ -770,6 +770,10 @@ type="text/css">
     <li class="api apilevel-">
   <a href="../../../../reference/com/android/test/runner/package-summary.html">com.android.test.runner</a></li>
     <li class="api apilevel-">
+  <a href="../../../../reference/com/nxp/eseclient/package-summary.html">com.nxp.eseclient</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../reference/com/nxp/intf/package-summary.html">com.nxp.intf</a></li>
+    <li class="api apilevel-">
   <a href="../../../../reference/com/nxp/nfc/package-summary.html">com.nxp.nfc</a></li>
     <li class="api apilevel-">
   <a href="../../../../reference/com/nxp/nfc/gsma/internal/package-summary.html">com.nxp.nfc.gsma.internal</a></li>
@@ -2473,8 +2477,13 @@ From interface
       
   <div class="jd-tagdata jd-tagdescr"><p>Send raw NFC-F commands to the tag and receive the response.
 
- <p>Applications must not append the SoD (length) or EoD (CRC) to the payload,
- it will be automatically calculated.
+ <p>Applications must not prefix the SoD (preamble and sync code)
+ and/or append the EoD (CRC) to the payload, it will be automatically calculated.
+
+ <p>A typical NFC-F frame for this method looks like:
+ <pre>
+ LENGTH (1 byte) --- CMD (1 byte) -- IDm (8 bytes) -- PARAMS (LENGTH - 10 bytes)
+ </pre>
 
  <p>Use <code><a href="../../../../reference/android/nfc/tech/NfcF.html#getMaxTransceiveLength()">getMaxTransceiveLength()</a></code> to retrieve the maximum amount of bytes
  that can be sent with <code><a href="../../../../reference/android/nfc/tech/NfcF.html#transceive(byte[])">transceive(byte[])</a></code>.

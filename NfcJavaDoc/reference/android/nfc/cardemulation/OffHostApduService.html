@@ -770,6 +770,10 @@ type="text/css">
     <li class="api apilevel-">
   <a href="../../../../reference/com/android/test/runner/package-summary.html">com.android.test.runner</a></li>
     <li class="api apilevel-">
+  <a href="../../../../reference/com/nxp/eseclient/package-summary.html">com.nxp.eseclient</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../reference/com/nxp/intf/package-summary.html">com.nxp.intf</a></li>
+    <li class="api apilevel-">
   <a href="../../../../reference/com/nxp/nfc/package-summary.html">com.nxp.nfc</a></li>
     <li class="api apilevel-">
   <a href="../../../../reference/com/nxp/nfc/gsma/internal/package-summary.html">com.nxp.nfc.gsma.internal</a></li>
@@ -931,8 +935,15 @@ type="text/css">
               
     <li><h2>Classes</h2>
       <ul>
+          <li class="api apilevel-"><a href="../../../../reference/android/nfc/cardemulation/AidGroup.html">AidGroup</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/android/nfc/cardemulation/ApduServiceInfo.html">ApduServiceInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/android/nfc/cardemulation/ApduServiceInfo.ESeInfo.html">ApduServiceInfo.ESeInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/android/nfc/cardemulation/ApduServiceInfo.FelicaInfo.html">ApduServiceInfo.FelicaInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/android/nfc/cardemulation/ApduServiceInfo.Nfcid2Group.html">ApduServiceInfo.Nfcid2Group</a></li>
           <li class="api apilevel-19"><a href="../../../../reference/android/nfc/cardemulation/CardEmulation.html">CardEmulation</a></li>
           <li class="api apilevel-19"><a href="../../../../reference/android/nfc/cardemulation/HostApduService.html">HostApduService</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/android/nfc/cardemulation/HostNfcFService.html">HostNfcFService</a></li>
+          <li class="api apilevel-"><a href="../../../../reference/android/nfc/cardemulation/NfcFCardEmulation.html">NfcFCardEmulation</a></li>
           <li class="selected api apilevel-19"><a href="../../../../reference/android/nfc/cardemulation/OffHostApduService.html">OffHostApduService</a></li>
       </ul>
     </li>
@@ -3916,8 +3927,8 @@ From class
         <span class="sympad"><a href="../../../../reference/android/content/ContextWrapper.html#getCacheDir()">getCacheDir</a></span>()</nobr>
         
         <div class="jd-descrdiv">
-          Returns the absolute path to the application specific cache directory
- on the filesystem.
+          Returns the absolute path to the application specific cache directory on
+ the filesystem.
           
     
 
@@ -4058,9 +4069,9 @@ From class
         <span class="sympad"><a href="../../../../reference/android/content/ContextWrapper.html#getExternalCacheDir()">getExternalCacheDir</a></span>()</nobr>
         
         <div class="jd-descrdiv">
-          Returns the absolute path to the directory on the primary external filesystem
- (that is somewhere on <code><a href="../../../../reference/android/os/Environment.html#getExternalStorageDirectory()">Environment.getExternalStorageDirectory()</a></code> where the application can
- place cache files it owns.
+          Returns absolute path to application-specific directory on the primary
+ shared/external storage device where the application can place cache
+ files it owns.
           
     
 
@@ -4084,8 +4095,8 @@ From class
         
         <div class="jd-descrdiv">
           Returns absolute paths to application-specific directories on all
- external storage devices where the application can place cache files it
- owns.
+ shared/external storage devices where the application can place cache
+ files it owns.
           
     
 
@@ -4108,9 +4119,8 @@ From class
         <span class="sympad"><a href="../../../../reference/android/content/ContextWrapper.html#getExternalFilesDir(java.lang.String)">getExternalFilesDir</a></span>(<a href="../../../../reference/java/lang/String.html">String</a> type)</nobr>
         
         <div class="jd-descrdiv">
-          Returns the absolute path to the directory on the primary external filesystem
- (that is somewhere on <code><a href="../../../../reference/android/os/Environment.html#getExternalStorageDirectory()">Environment.getExternalStorageDirectory()</a></code>) where the application can
- place persistent files it owns.
+          Returns the absolute path to the directory on the primary shared/external
+ storage device where the application can place persistent files it owns.
           
     
 
@@ -4134,8 +4144,8 @@ From class
         
         <div class="jd-descrdiv">
           Returns absolute paths to application-specific directories on all
- external storage devices where the application can place persistent files
- it owns.
+ shared/external storage devices where the application can place
+ persistent files it owns.
           
     
 
@@ -4159,7 +4169,8 @@ From class
         
         <div class="jd-descrdiv">
           Returns absolute paths to application-specific directories on all
- external storage devices where the application can place media files.
+ shared/external storage devices where the application can place media
+ files.
           
     
 
@@ -4206,8 +4217,8 @@ From class
         <span class="sympad"><a href="../../../../reference/android/content/ContextWrapper.html#getFilesDir()">getFilesDir</a></span>()</nobr>
         
         <div class="jd-descrdiv">
-          Returns the absolute path to the directory on the filesystem where
- files created with <code><a href="../../../../reference/android/content/Context.html#openFileOutput(java.lang.String, int)">openFileOutput(String, int)</a></code> are stored.
+          Returns the absolute path to the directory on the filesystem where files
+ created with <code><a href="../../../../reference/android/content/Context.html#openFileOutput(java.lang.String, int)">openFileOutput(String, int)</a></code> are stored.
           
     
 
@@ -4277,8 +4288,8 @@ From class
         <span class="sympad"><a href="../../../../reference/android/content/ContextWrapper.html#getObbDir()">getObbDir</a></span>()</nobr>
         
         <div class="jd-descrdiv">
-          Return the primary external storage directory where this application's OBB
- files (if there are any) can be found.
+          Return the primary shared/external storage directory where this
+ application's OBB files (if there are any) can be found.
           
     
 
@@ -4302,8 +4313,8 @@ From class
         
         <div class="jd-descrdiv">
           Returns absolute paths to application-specific directories on all
- external storage devices where the application's OBB files (if there are
- any) can be found.
+ shared/external storage devices where the application's OBB files (if
+ there are any) can be found.
           
     
 
@@ -6219,8 +6230,8 @@ From class
         <span class="sympad"><a href="../../../../reference/android/content/Context.html#getCacheDir()">getCacheDir</a></span>()</nobr>
         
         <div class="jd-descrdiv">
-          Returns the absolute path to the application specific cache directory
- on the filesystem.
+          Returns the absolute path to the application specific cache directory on
+ the filesystem.
           
     
 
@@ -6433,9 +6444,9 @@ From class
         <span class="sympad"><a href="../../../../reference/android/content/Context.html#getExternalCacheDir()">getExternalCacheDir</a></span>()</nobr>
         
         <div class="jd-descrdiv">
-          Returns the absolute path to the directory on the primary external filesystem
- (that is somewhere on <code><a href="../../../../reference/android/os/Environment.html#getExternalStorageDirectory()">Environment.getExternalStorageDirectory()</a></code> where the application can
- place cache files it owns.
+          Returns absolute path to application-specific directory on the primary
+ shared/external storage device where the application can place cache
+ files it owns.
           
     
 
@@ -6459,8 +6470,8 @@ From class
         
         <div class="jd-descrdiv">
           Returns absolute paths to application-specific directories on all
- external storage devices where the application can place cache files it
- owns.
+ shared/external storage devices where the application can place cache
+ files it owns.
           
     
 
@@ -6483,9 +6494,8 @@ From class
         <span class="sympad"><a href="../../../../reference/android/content/Context.html#getExternalFilesDir(java.lang.String)">getExternalFilesDir</a></span>(<a href="../../../../reference/java/lang/String.html">String</a> type)</nobr>
         
         <div class="jd-descrdiv">
-          Returns the absolute path to the directory on the primary external filesystem
- (that is somewhere on <code><a href="../../../../reference/android/os/Environment.html#getExternalStorageDirectory()">Environment.getExternalStorageDirectory()</a></code>) where the application can
- place persistent files it owns.
+          Returns the absolute path to the directory on the primary shared/external
+ storage device where the application can place persistent files it owns.
           
     
 
@@ -6509,8 +6519,8 @@ From class
         
         <div class="jd-descrdiv">
           Returns absolute paths to application-specific directories on all
- external storage devices where the application can place persistent files
- it owns.
+ shared/external storage devices where the application can place
+ persistent files it owns.
           
     
 
@@ -6534,7 +6544,8 @@ From class
         
         <div class="jd-descrdiv">
           Returns absolute paths to application-specific directories on all
- external storage devices where the application can place media files.
+ shared/external storage devices where the application can place media
+ files.
           
     
 
@@ -6581,8 +6592,8 @@ From class
         <span class="sympad"><a href="../../../../reference/android/content/Context.html#getFilesDir()">getFilesDir</a></span>()</nobr>
         
         <div class="jd-descrdiv">
-          Returns the absolute path to the directory on the filesystem where
- files created with <code><a href="../../../../reference/android/content/Context.html#openFileOutput(java.lang.String, int)">openFileOutput(String, int)</a></code> are stored.
+          Returns the absolute path to the directory on the filesystem where files
+ created with <code><a href="../../../../reference/android/content/Context.html#openFileOutput(java.lang.String, int)">openFileOutput(String, int)</a></code> are stored.
           
     
 
@@ -6652,8 +6663,8 @@ From class
         <span class="sympad"><a href="../../../../reference/android/content/Context.html#getObbDir()">getObbDir</a></span>()</nobr>
         
         <div class="jd-descrdiv">
-          Return the primary external storage directory where this application's OBB
- files (if there are any) can be found.
+          Return the primary shared/external storage directory where this
+ application's OBB files (if there are any) can be found.
           
     
 
@@ -6677,8 +6688,8 @@ From class
         
         <div class="jd-descrdiv">
           Returns absolute paths to application-specific directories on all
- external storage devices where the application's OBB files (if there are
- any) can be found.
+ shared/external storage devices where the application's OBB files (if
+ there are any) can be found.
           
     
 
