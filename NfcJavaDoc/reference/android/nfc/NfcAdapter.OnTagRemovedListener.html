@@ -32,7 +32,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TagLostException | Android Developers
+  <title>NfcAdapter.OnTagRemovedListener | Android Developers
 </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
@@ -81,8 +81,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
 </script>
 </head>
 
-<body class="gc-documentation develop reference api apilevel-10">
-<div id="doc-api-level" class="10" style="display:none"></div>
+<body class="gc-documentation develop reference api apilevel-24">
+<div id="doc-api-level" class="24" style="display:none"></div>
 
 
   
@@ -695,7 +695,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
           <li class="api apilevel-16"><a href="../../../reference/android/nfc/NfcAdapter.CreateBeamUrisCallback.html">NfcAdapter.CreateBeamUrisCallback</a></li>
           <li class="api apilevel-14"><a href="../../../reference/android/nfc/NfcAdapter.CreateNdefMessageCallback.html">NfcAdapter.CreateNdefMessageCallback</a></li>
           <li class="api apilevel-14"><a href="../../../reference/android/nfc/NfcAdapter.OnNdefPushCompleteCallback.html">NfcAdapter.OnNdefPushCompleteCallback</a></li>
-          <li class="api apilevel-24"><a href="../../../reference/android/nfc/NfcAdapter.OnTagRemovedListener.html">NfcAdapter.OnTagRemovedListener</a></li>
+          <li class="selected api apilevel-24"><a href="../../../reference/android/nfc/NfcAdapter.OnTagRemovedListener.html">NfcAdapter.OnTagRemovedListener</a></li>
           <li class="api apilevel-19"><a href="../../../reference/android/nfc/NfcAdapter.ReaderCallback.html">NfcAdapter.ReaderCallback</a></li>
       </ul>
     </li>
@@ -715,7 +715,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     <li><h2>Exceptions</h2>
       <ul>
           <li class="api apilevel-9"><a href="../../../reference/android/nfc/FormatException.html">FormatException</a></li>
-          <li class="selected api apilevel-10"><a href="../../../reference/android/nfc/TagLostException.html">TagLostException</a></li>
+          <li class="api apilevel-10"><a href="../../../reference/android/nfc/TagLostException.html">TagLostException</a></li>
       </ul>
     </li>
           
@@ -794,7 +794,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
 <div id="api-info-block">
 <div class="api-level">
   
-  Added in <a href="../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 10</a>
+  Added in <a href="../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 24</a>
   
   
 
@@ -802,104 +802,28 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
 
 
 
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-   
-  
-  
-  
-  
-
-  
-   
-  
-  
-  
-  
-
-  
-  
-  
-  
-
 
 <div class="sum-details-links">
-
-Summary:
-
-
-
-
-
-
-
-
-
-  <a href="#pubctors">Ctors</a>
-  
-
-
-
-
-
-  &#124; <a href="#inhmethods">Inherited Methods</a>
-
-&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
 
 </div><!-- end sum-details-links -->
 </div><!-- end api-info-block -->
 
-<div class="api apilevel-10" id="jd-content">
+<div class="api apilevel-24" id="jd-content">
 
 <!-- ======== START OF CLASS DATA ======== -->
 
-<h1 class="api-title">TagLostException</h1>
+<h1 class="api-title">NfcAdapter.OnTagRemovedListener</h1>
 <p>
 <code class="api-signature">
   public
+  static
   
   
-  
-  class
-  TagLostException
+  interface
+  NfcAdapter.OnTagRemovedListener
 </code>
 <br>
 
-
-<code class="api-signature">
-  
-  
-  
-</code>
-
-<code class="api-signature">
-  
-  
-  
-</code>
-
-<code class="api-signature">
-  
-  
-  
-</code>
-
-<code class="api-signature">
-  
-    extends <a href="../../../reference/java/io/IOException.html">IOException</a>
-  
-  
-  
-</code>
 
 <code class="api-signature">
   
@@ -912,55 +836,7 @@ Summary:
 
   <tr>
     
-    <td colspan="5" class="jd-inheritance-class-cell"><a href="../../../reference/java/lang/Object.html">java.lang.Object</a>
-    </td>
-  </tr>
-  
-
-  <tr>
-    
-      <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-    
-    <td colspan="4" class="jd-inheritance-class-cell"><a href="../../../reference/java/lang/Throwable.html">java.lang.Throwable</a>
-    </td>
-  </tr>
-  
-
-  <tr>
-    
-      <td class="jd-inheritance-space">&nbsp;</td>
-    
-      <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-    
-    <td colspan="3" class="jd-inheritance-class-cell"><a href="../../../reference/java/lang/Exception.html">java.lang.Exception</a>
-    </td>
-  </tr>
-  
-
-  <tr>
-    
-      <td class="jd-inheritance-space">&nbsp;</td>
-    
-      <td class="jd-inheritance-space">&nbsp;</td>
-    
-      <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-    
-    <td colspan="2" class="jd-inheritance-class-cell"><a href="../../../reference/java/io/IOException.html">java.io.IOException</a>
-    </td>
-  </tr>
-  
-
-  <tr>
-    
-      <td class="jd-inheritance-space">&nbsp;</td>
-    
-      <td class="jd-inheritance-space">&nbsp;</td>
-    
-      <td class="jd-inheritance-space">&nbsp;</td>
-    
-      <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-    
-    <td colspan="1" class="jd-inheritance-class-cell">android.nfc.TagLostException
+    <td colspan="1" class="jd-inheritance-class-cell">android.nfc.NfcAdapter.OnTagRemovedListener
     </td>
   </tr>
   
@@ -973,8 +849,15 @@ Summary:
 <br><hr>
 
 
+  <p>A callback that is invoked when a tag is removed from the field.</p>
 
 
+
+  <div>
+      <p><b>See also:</b></p>
+      <ul class="nolist"><li><code><a href="../../../reference/android/nfc/NfcAdapter.html#ignore(android.nfc.Tag, int, android.nfc.NfcAdapter.OnTagRemovedListener, android.os.Handler)">ignore(Tag, int, NfcAdapter.OnTagRemovedListener, Handler)</a></code></li>
+      </ul>
+  </div>
 
 
 
@@ -1003,309 +886,22 @@ Summary:
 
 
 
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<table id="pubctors" class="responsive constructors">
-<tr><th colspan="2"><h3>Public constructors</h3></th></tr>
-
-
-
-  
-  <tr class="api apilevel-10" >
-  
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/android/nfc/TagLostException.html#TagLostException()">TagLostException</a>()
-      </code>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-10" >
-  
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/android/nfc/TagLostException.html#TagLostException(java.lang.String)">TagLostException</a>(<a href="../../../reference/java/lang/String.html">String</a> message)
-      </code>
-      
-    </td>
-  </tr>
-  
-
-
-</table>
-
-
-
-
-
-
-
 
 
 
 
 <!-- ========== METHOD SUMMARY =========== -->
-<table id="inhmethods" class="methods inhtable">
-<tr><th><h3>Inherited methods</h3></th></tr>
+<table id="pubmethods" class="responsive methods">
+<tr><th colspan="2"><h3>Public methods</h3></th></tr>
 
-
-
-
-
-
-<tr class="api apilevel-" >
-<td colspan="2">
-
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Throwable" class="jd-expando-trigger closed"
-          ><img height="34" id="inherited-methods-java.lang.Throwable-trigger"
-          src="../../../assets/images/styles/disclosure_down.png"
-          class="jd-expando-trigger-img" /></a>From
-class
-<code>
-  
-    <a href="../../../reference/java/lang/Throwable.html">java.lang.Throwable</a>
-  
-</code>
-<div id="inherited-methods-java.lang.Throwable">
-  <div id="inherited-methods-java.lang.Throwable-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-java.lang.Throwable-summary" style="display: none;">
-    <table class="jd-sumtable-expando responsive">
-      
 
 
   
-  <tr class="api apilevel-19" >
+  <tr class="api apilevel-24" >
   
   
     <td><code>
-        
-        
-        
-        final
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#addSuppressed(java.lang.Throwable)">addSuppressed</a>(<a href="../../../reference/java/lang/Throwable.html">Throwable</a> exception)
-      </code>
-      
-        <p>Appends the specified exception to the exceptions that were
- suppressed in order to deliver this exception.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        <a href="../../../reference/java/lang/Throwable.html">Throwable</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#fillInStackTrace()">fillInStackTrace</a>()
-      </code>
-      
-        <p>Fills in the execution stack trace.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        <a href="../../../reference/java/lang/Throwable.html">Throwable</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#getCause()">getCause</a>()
-      </code>
-      
-        <p>Returns the cause of this throwable or <code>null</code> if the
- cause is nonexistent or unknown.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        <a href="../../../reference/java/lang/String.html">String</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#getLocalizedMessage()">getLocalizedMessage</a>()
-      </code>
-      
-        <p>Creates a localized description of this throwable.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        <a href="../../../reference/java/lang/String.html">String</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#getMessage()">getMessage</a>()
-      </code>
-      
-        <p>Returns the detail message string of this throwable.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        <a href="../../../reference/java/lang/StackTraceElement.html">StackTraceElement[]</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#getStackTrace()">getStackTrace</a>()
-      </code>
-      
-        <p>Provides programmatic access to the stack trace information printed by
- <code><a href="../../../reference/java/lang/Throwable.html#printStackTrace()">printStackTrace()</a></code>.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-19" >
-  
-  
-    <td><code>
-        
-        
-        
-        final
-        
-        <a href="../../../reference/java/lang/Throwable.html">Throwable[]</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#getSuppressed()">getSuppressed</a>()
-      </code>
-      
-        <p>Returns an array containing all of the exceptions that were
- suppressed, typically by the <code>try</code>-with-resources
- statement, in order to deliver this exception.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        <a href="../../../reference/java/lang/Throwable.html">Throwable</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#initCause(java.lang.Throwable)">initCause</a>(<a href="../../../reference/java/lang/Throwable.html">Throwable</a> cause)
-      </code>
-      
-        <p>Initializes the <i>cause</i> of this throwable to the specified value.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
+        abstract
         
         
         
@@ -1315,478 +911,20 @@ class
   
     <td width="100%">
       <code>
-      <a href="../../../reference/java/lang/Throwable.html#printStackTrace()">printStackTrace</a>()
+      <a href="../../../reference/android/nfc/NfcAdapter.OnTagRemovedListener.html#onTagRemoved()">onTagRemoved</a>()
       </code>
-      
-        <p>Prints this throwable and its backtrace to the
- standard error stream.
-        
-    
-</p>
       
     </td>
   </tr>
   
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#printStackTrace(java.io.PrintWriter)">printStackTrace</a>(<a href="../../../reference/java/io/PrintWriter.html">PrintWriter</a> s)
-      </code>
-      
-        <p>Prints this throwable and its backtrace to the specified
- print writer.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#printStackTrace(java.io.PrintStream)">printStackTrace</a>(<a href="../../../reference/java/io/PrintStream.html">PrintStream</a> s)
-      </code>
-      
-        <p>Prints this throwable and its backtrace to the specified print stream.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#setStackTrace(java.lang.StackTraceElement[])">setStackTrace</a>(<a href="../../../reference/java/lang/StackTraceElement.html">StackTraceElement[]</a> stackTrace)
-      </code>
-      
-        <p>Sets the stack trace elements that will be returned by
- <code><a href="../../../reference/java/lang/Throwable.html#getStackTrace()">getStackTrace()</a></code> and printed by <code><a href="../../../reference/java/lang/Throwable.html#printStackTrace()">printStackTrace()</a></code>
- and related methods.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        <a href="../../../reference/java/lang/String.html">String</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Throwable.html#toString()">toString</a>()
-      </code>
-      
-        <p>Returns a short description of this throwable.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-
-    </table>
-  </div>
-</div>
-</td></tr>
-
-
-
-<tr class="api apilevel-" >
-<td colspan="2">
-
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
-          ><img height="34" id="inherited-methods-java.lang.Object-trigger"
-          src="../../../assets/images/styles/disclosure_down.png"
-          class="jd-expando-trigger-img" /></a>From
-class
-<code>
-  
-    <a href="../../../reference/java/lang/Object.html">java.lang.Object</a>
-  
-</code>
-<div id="inherited-methods-java.lang.Object">
-  <div id="inherited-methods-java.lang.Object-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
-    <table class="jd-sumtable-expando responsive">
-      
-
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        <a href="../../../reference/java/lang/Object.html">Object</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Object.html#clone()">clone</a>()
-      </code>
-      
-        <p>Creates and returns a copy of this object.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        boolean</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Object.html#equals(java.lang.Object)">equals</a>(<a href="../../../reference/java/lang/Object.html">Object</a> obj)
-      </code>
-      
-        <p>Indicates whether some other object is "equal to" this one.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Object.html#finalize()">finalize</a>()
-      </code>
-      
-        <p>Called by the garbage collector on an object when garbage collection
- determines that there are no more references to the object.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        final
-        
-        <a href="../../../reference/java/lang/Class.html">Class</a>&lt;?&gt;</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Object.html#getClass()">getClass</a>()
-      </code>
-      
-        <p>Returns the runtime class of this <code>Object</code>.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        int</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Object.html#hashCode()">hashCode</a>()
-      </code>
-      
-        <p>Returns a hash code value for the object.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        final
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Object.html#notify()">notify</a>()
-      </code>
-      
-        <p>Wakes up a single thread that is waiting on this object's
- monitor.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        final
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Object.html#notifyAll()">notifyAll</a>()
-      </code>
-      
-        <p>Wakes up all threads that are waiting on this object's monitor.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        <a href="../../../reference/java/lang/String.html">String</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Object.html#toString()">toString</a>()
-      </code>
-      
-        <p>Returns a string representation of the object.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        final
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Object.html#wait(long, int)">wait</a>(long millis, int nanos)
-      </code>
-      
-        <p>Causes the current thread to wait until another thread invokes the
- <code><a href="../../../reference/java/lang/Object.html#notify()">notify()</a></code> method or the
- <code><a href="../../../reference/java/lang/Object.html#notifyAll()">notifyAll()</a></code> method for this object, or
- some other thread interrupts the current thread, or a certain
- amount of real time has elapsed.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        final
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Object.html#wait(long)">wait</a>(long millis)
-      </code>
-      
-        <p>Causes the current thread to wait until either another thread invokes the
- <code><a href="../../../reference/java/lang/Object.html#notify()">notify()</a></code> method or the
- <code><a href="../../../reference/java/lang/Object.html#notifyAll()">notifyAll()</a></code> method for this object, or a
- specified amount of time has elapsed.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  
-  <tr class="api apilevel-1" >
-  
-  
-    <td><code>
-        
-        
-        
-        final
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../reference/java/lang/Object.html#wait()">wait</a>()
-      </code>
-      
-        <p>Causes the current thread to wait until another thread invokes the
- <code><a href="../../../reference/java/lang/Object.html#notify()">notify()</a></code> method or the
- <code><a href="../../../reference/java/lang/Object.html#notifyAll()">notifyAll()</a></code> method for this object.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-
-    </table>
-  </div>
-</div>
-</td></tr>
-
-
 
 
 </table>
+
+
+
+
+
 
 
 
@@ -1805,66 +943,6 @@ class
 <!-- Public ctors -->
 
 
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<h2 class="api-section">Public constructors</h2>
-
-
-
-<A NAME="TagLostException()"></A>
-
-<div class="api apilevel-10">
-    <h3 class="api-name">TagLostException</h3>
-    <div class="api-level">
-      <div>
-  Added in <a href="../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 10</a></div>
-      
-  
-
-    </div>
-<pre class="api-signature no-pretty-print">
-TagLostException ()</pre>
-    
-    
-
-    
-  <p></p>
-
-</div>
-
-
-<A NAME="TagLostException(java.lang.String)"></A>
-
-<div class="api apilevel-10">
-    <h3 class="api-name">TagLostException</h3>
-    <div class="api-level">
-      <div>
-  Added in <a href="../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 10</a></div>
-      
-  
-
-    </div>
-<pre class="api-signature no-pretty-print">
-TagLostException (<a href="../../../reference/java/lang/String.html">String</a> message)</pre>
-    
-    
-
-    
-  <p></p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>message</code></td>
-        <td width="100%">
-          <code>String</code>
-          <!-- no parameter comment --></td>
-      </tr>
-    </table>
-
-</div>
-
-
-
-
 
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <!-- Protected ctors -->
@@ -1873,6 +951,33 @@ TagLostException (<a href="../../../reference/java/lang/String.html">String</a> 
 
 <!-- ========= METHOD DETAIL ======== -->
 <!-- Public methdos -->
+
+<h2 class="api-section">Public methods</h2>
+
+
+
+<A NAME="onTagRemoved()"></A>
+
+<div class="api apilevel-24">
+    <h3 class="api-name">onTagRemoved</h3>
+    <div class="api-level">
+      <div>
+  Added in <a href="../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 24</a></div>
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+void onTagRemoved ()</pre>
+    
+    
+
+    
+  <p></p>
+
+</div>
+
+
 
 
 
