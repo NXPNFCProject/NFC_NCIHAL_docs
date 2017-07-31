@@ -6288,6 +6288,30 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     <tr class="api apilevel-" >
         <td><code>int</code></td>
         <td width="100%">
+          <code><a href="../../reference/android/R.styleable.html#ApduPatternFilter_description">ApduPatternFilter_description</a></code>
+          <p><p>Descriptive text for the associated data.
+          
+    
+</p>
+        </td>
+    </tr>
+    
+    
+    <tr class="api apilevel-" >
+        <td><code>int</code></td>
+        <td width="100%">
+          <code><a href="../../reference/android/R.styleable.html#ApduPatternGroup_description">ApduPatternGroup_description</a></code>
+          <p><p>Short description of what the ApduPatternGroup implements.
+          
+    
+</p>
+        </td>
+    </tr>
+    
+    
+    <tr class="api apilevel-" >
+        <td><code>int</code></td>
+        <td width="100%">
           <code><a href="../../reference/android/R.styleable.html#AppWidgetProviderInfo_autoAdvanceViewId">AppWidgetProviderInfo_autoAdvanceViewId</a></code>
           <p><p>The view id of the AppWidget subview which should be auto-advanced.
           
@@ -25952,6 +25976,43 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     <td width="100%">
       <code><a href="../../reference/android/R.styleable.html#AnticipateOvershootInterpolator">AnticipateOvershootInterpolator</a></code>
       <p>Attributes that can be used with a AnticipateOvershootInterpolator.
+      
+    
+</p>
+    </td>
+  </tr>
+  
+
+  <tr class="api apilevel-" >
+    <td><code>
+    public
+    static
+    final
+    int[]</code></td>
+    <td width="100%">
+      <code><a href="../../reference/android/R.styleable.html#ApduPatternFilter">ApduPatternFilter</a></code>
+      <p>Specify one or more <code>apdu-pattern-filter</code> elements inside a
+         <code>apdu-pattern-group</code> element to specify an APDU Pattern
+         your service can handle.
+      
+    
+</p>
+    </td>
+  </tr>
+  
+
+  <tr class="api apilevel-" >
+    <td><code>
+    public
+    static
+    final
+    int[]</code></td>
+    <td width="100%">
+      <code><a href="../../reference/android/R.styleable.html#ApduPatternGroup">ApduPatternGroup</a></code>
+      <p>Specify one or more <code>apdu-pattern-group</code> elements inside a
+         <code>offhost-apdu-service</code>
+         element to define a group of APDU Pattern that
+         your service can handle.
       
     
 </p>
@@ -48031,6 +48092,76 @@ theme attribute (in the form
 containing a value of this type.
           <p>This corresponds to the global attribute
           resource symbol <code><a href="../../reference/android/R.attr.html#tension">tension</a></code>.</p>
+
+    
+      <p>Constant Value:
+      
+          0
+          (0x00000000)
+      
+    
+</div>
+
+
+
+<A NAME="ApduPatternFilter_description"></A>
+
+<div class="api apilevel-">
+    <h3 class="api-name">ApduPatternFilter_description</h3>
+    <div class="api-level">
+      
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+int ApduPatternFilter_description</pre>
+    
+    
+
+    
+  <p><p>Descriptive text for the associated data. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This corresponds to the global attribute
+          resource symbol <code><a href="../../reference/android/R.attr.html#description">description</a></code>.</p>
+
+    
+      <p>Constant Value:
+      
+          0
+          (0x00000000)
+      
+    
+</div>
+
+
+
+<A NAME="ApduPatternGroup_description"></A>
+
+<div class="api apilevel-">
+    <h3 class="api-name">ApduPatternGroup_description</h3>
+    <div class="api-level">
+      
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+int ApduPatternGroup_description</pre>
+    
+    
+
+    
+  <p><p>Short description of what the ApduPatternGroup implements. This attribute is mandatory.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This corresponds to the global attribute
+          resource symbol <code><a href="../../reference/android/R.attr.html#description">description</a></code>.</p>
 
     
       <p>Constant Value:
@@ -111090,6 +111221,81 @@ int[] AnticipateOvershootInterpolator</pre>
   <div>
       <p><b>See also:</b></p>
       <ul class="nolist"><li><code><a href="../../reference/android/R.styleable.html#AnticipateOvershootInterpolator_extraTension">AnticipateOvershootInterpolator_extraTension</a></code></li><li><code><a href="../../reference/android/R.styleable.html#AnticipateOvershootInterpolator_tension">AnticipateOvershootInterpolator_tension</a></code></li>
+      </ul>
+  </div>
+
+    
+</div>
+
+
+
+<A NAME="ApduPatternFilter"></A>
+
+<div class="api apilevel-">
+    <h3 class="api-name">ApduPatternFilter</h3>
+    <div class="api-level">
+      
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+int[] ApduPatternFilter</pre>
+    
+    
+
+    
+  <p>Specify one or more <code>apdu-pattern-filter</code> elements inside a
+         <code>apdu-pattern-group</code> element to specify an APDU Pattern
+         your service can handle. 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code><code><a href="../../reference/android/R.styleable.html#ApduPatternFilter_description">android:description</a></code></code></td><td> Descriptive text for the associated data.</td></tr>
+           </table></p>
+  <div>
+      <p><b>See also:</b></p>
+      <ul class="nolist"><li><code><a href="../../reference/android/R.styleable.html#ApduPatternFilter_description">ApduPatternFilter_description</a></code></li>
+      </ul>
+  </div>
+
+    
+</div>
+
+
+
+<A NAME="ApduPatternGroup"></A>
+
+<div class="api apilevel-">
+    <h3 class="api-name">ApduPatternGroup</h3>
+    <div class="api-level">
+      
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+int[] ApduPatternGroup</pre>
+    
+    
+
+    
+  <p>Specify one or more <code>apdu-pattern-group</code> elements inside a
+         <code>offhost-apdu-service</code>
+         element to define a group of APDU Pattern that
+         your service can handle.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code><code><a href="../../reference/android/R.styleable.html#ApduPatternGroup_description">android:description</a></code></code></td><td> Short description of what the ApduPatternGroup implements.</td></tr>
+           </table></p>
+  <div>
+      <p><b>See also:</b></p>
+      <ul class="nolist"><li><code><a href="../../reference/android/R.styleable.html#ApduPatternGroup_description">ApduPatternGroup_description</a></code></li>
       </ul>
   </div>
 
