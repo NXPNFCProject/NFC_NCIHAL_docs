@@ -8,7 +8,7 @@ var SITE_ROOT = toRoot + basePath.substring(1, basePath.indexOf("/", 1));
 // TODO(akassay) generate this var in the reference doc build.
 var API_LEVELS = ['1', '2', '3', '4', '5', '6', '7', '8', '9',
       '10', '11', '12', '13', '14', '15', '16',
-      '17', '18', '19', '20', '21', '22', '23', '24'];
+      '17', '18', '19', '20', '21', '22', '23', '24', '25', 'O'];
 var METADATA = METADATA || {};
 var RESERVED_METADATA_CATEGORY_NAMES = ['extras', 'carousel', 'collections',
                                         'searchHeroCollections'];
