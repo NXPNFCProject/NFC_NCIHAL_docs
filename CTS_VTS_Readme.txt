@@ -5,9 +5,9 @@ Following are the configurations used for CTS testing.
 
 I.  Default MW configurations are as below:
     DEFAULT_AID_ROUTE=0x00 (HOST)
-	DEFAULT_DESFIRE_ROUTE=0x02 (UICC)
+    DEFAULT_DESFIRE_ROUTE=0x02 (UICC)
     DEFAULT_MIFARE_CLT_ROUTE=0x02 (UICC)
-	DEFAULT_FELICA_CLT_ROUTE=0x01 (UICC)
+    DEFAULT_FELICA_CLT_ROUTE=0x01 (UICC)
 		
 	Following is the list of tests cases performed with default MW configurations
 	1. Protocol Parameters
@@ -22,19 +22,18 @@ I.  Default MW configurations are as below:
 	10.Foreground override payment services
 	11.Foreground override non-payment services
 	12.Dynamic Payment AIDS
-    13.Payment prefix AIDs
+        13.Payment prefix AIDs
 	14.Payment prefix AIDs 2
 	15.Other prefix AIDs
 	16.Conflicting non-payment prefix AIDs
+	17.Off-host service -> if UICC Presence UICC AID will be registered in routing table and transaction will happen to off host else Tx will happen to on-host
+	18.On and off-host services
+	19.Large number of AIDs
     
 
-II. For following test cases which needs off-host used DEFAULT_AID_ROUTE set to 0x02(UICC)
-	1.Off-host service
-	2.On and off-host services
-    3.Large number of AIDs   	
-    
-	If you require to validate the above tests by setting OFF-HOST as eSE
-	 use DEFAULT_OFFHOST_ROUTE=0x01 (Where Default value is 0x02 UICC) and DEFAULT_AID_ROUTE = 0x01(eSE)
+II. For following test case to check the overflow handling in MW, set DEFAULT_AID_ROUTE to 0x02(UICC) or 0x01(eSE) in config
+        1.Large number of AIDs   	
+
 	 
 -----------------------------------
 Execution of VTS Tests
