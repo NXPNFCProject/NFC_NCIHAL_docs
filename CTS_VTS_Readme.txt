@@ -34,6 +34,10 @@ I.  Default MW configurations are as below:
 II. For following test case to check the overflow handling in MW, set DEFAULT_AID_ROUTE to 0x02(UICC) or 0x01(eSE) in config
         1.Large number of AIDs   	
 
+
+This will modify the default AID route location. To revert to original configuration, 
+make sure the services causing the overflow are removed by completing the testcase
+and then invoke  NxpNfcAdapter.DefaultRouteSet to original route location
 	 
 -----------------------------------
 Execution of VTS Tests
@@ -52,5 +56,6 @@ Execution of VTS Tests
 	2.	cd  /system/bin/    
 	4.	chmod 777 VtsHalNfcV1_0TargetTest
 	5.	./VtsHalNfcV1_0TargetTest
+
 
 ---------------------------------------------------------------------------------
