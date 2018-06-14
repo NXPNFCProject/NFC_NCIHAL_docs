@@ -174,7 +174,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <div id="api-nav-title">Android APIs</div>
       </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', 'Q' ];
         buildApiLevelSelector();
       </script>
 
@@ -333,6 +333,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
   <a href="../../reference/android/renderscript/package-summary.html">android.renderscript</a></li>
     <li class="api apilevel-1">
   <a href="../../reference/android/sax/package-summary.html">android.sax</a></li>
+    <li class="api apilevel-Q">
+  <a href="../../reference/android/se/omapi/package-summary.html">android.se.omapi</a></li>
     <li class="api apilevel-14">
   <a href="../../reference/android/security/package-summary.html">android.security</a></li>
     <li class="api apilevel-23">
@@ -373,12 +375,16 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
   <a href="../../reference/android/telephony/package-summary.html">android.telephony</a></li>
     <li class="api apilevel-5">
   <a href="../../reference/android/telephony/cdma/package-summary.html">android.telephony.cdma</a></li>
+    <li class="api apilevel-Q">
+  <a href="../../reference/android/telephony/data/package-summary.html">android.telephony.data</a></li>
+    <li class="api apilevel-Q">
+  <a href="../../reference/android/telephony/euicc/package-summary.html">android.telephony.euicc</a></li>
     <li class="api apilevel-1">
   <a href="../../reference/android/telephony/gsm/package-summary.html">android.telephony.gsm</a></li>
+    <li class="api apilevel-Q">
+  <a href="../../reference/android/telephony/mbms/package-summary.html">android.telephony.mbms</a></li>
     <li class="api apilevel-1">
   <a href="../../reference/android/test/package-summary.html">android.test</a></li>
-    <li class="api apilevel-1">
-  <a href="../../reference/android/test/mock/package-summary.html">android.test.mock</a></li>
     <li class="api apilevel-1">
   <a href="../../reference/android/test/suitebuilder/package-summary.html">android.test.suitebuilder</a></li>
     <li class="api apilevel-1">
@@ -415,8 +421,6 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
   <a href="../../reference/android/webkit/package-summary.html">android.webkit</a></li>
     <li class="api apilevel-1">
   <a href="../../reference/android/widget/package-summary.html">android.widget</a></li>
-    <li class="api apilevel-1">
-  <a href="../../reference/com/android/internal/util/package-summary.html">com.android.internal.util</a></li>
     <li class="api apilevel-1">
   <a href="../../reference/dalvik/annotation/package-summary.html">dalvik.annotation</a></li>
     <li class="api apilevel-1">
@@ -827,6 +831,18 @@ Summary:
 <tr><th colspan="2"><h3>Constants</h3></th></tr>
 
 
+    
+    <tr class="api apilevel-Q" >
+        <td><code><a href="../../reference/java/lang/String.html">String</a></code></td>
+        <td width="100%">
+          <code><a href="../../reference/android/Manifest.permission.html#ACCEPT_HANDOVER">ACCEPT_HANDOVER</a></code>
+          <p>Allows a calling app to continue a call which was started in another app.
+          
+    
+</p>
+        </td>
+    </tr>
+    
     
     <tr class="api apilevel-1" >
         <td><code><a href="../../reference/java/lang/String.html">String</a></code></td>
@@ -1902,6 +1918,18 @@ Summary:
         <td width="100%">
           <code><a href="../../reference/android/Manifest.permission.html#NFC">NFC</a></code>
           <p>Allows applications to perform I/O operations over NFC.
+          
+    
+</p>
+        </td>
+    </tr>
+    
+    
+    <tr class="api apilevel-Q" >
+        <td><code><a href="../../reference/java/lang/String.html">String</a></code></td>
+        <td width="100%">
+          <code><a href="../../reference/android/Manifest.permission.html#NFC_TRANSACTION_EVENT">NFC_TRANSACTION_EVENT</a></code>
+          <p>Allows applications to receive NFC transaction events.
           
     
 </p>
@@ -3085,6 +3113,45 @@ class
 <!-- ========= ENUM CONSTANTS DETAIL ======== -->
 <h2 class="api-section">Constants</h2>
 
+
+
+
+<A NAME="ACCEPT_HANDOVER"></A>
+
+<div class="api apilevel-Q">
+    <h3 class="api-name">ACCEPT_HANDOVER</h3>
+    <div class="api-level">
+      
+    <b><a href="../../preview/">Android Q Developer Preview</a></b>
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+<a href="../../reference/java/lang/String.html">String</a> ACCEPT_HANDOVER</pre>
+    
+    
+
+    
+  <p>Allows a calling app to continue a call which was started in another app.  An example is a
+ video calling app that wants to continue a voice call on the user's mobile network.<p>
+ When the handover of a call from one app to another takes place, there are two devices
+ which are involved in the handover; the initiating and receiving devices.  The initiating
+ device is where the request to handover the call was started, and the receiving device is
+ where the handover request is confirmed by the other party.<p>
+ This permission protects access to
+ <code><a href="../../reference/android/telecom/TelecomManager.html#acceptHandover(android.net.Uri, int, android.telecom.PhoneAccountHandle)">acceptHandover(Uri, int, PhoneAccountHandle)</a></code>, which
+ the receiving side of the handover uses to accept a handover.
+ <p>Protection level: dangerous
+</p></p>
+
+    
+      <p>Constant Value:
+      
+          "android.permission.ACCEPT_HANDOVER"
+      
+    
+</div>
 
 
 
@@ -5828,6 +5895,37 @@ class
       <p>Constant Value:
       
           "android.permission.NFC"
+      
+    
+</div>
+
+
+
+<A NAME="NFC_TRANSACTION_EVENT"></A>
+
+<div class="api apilevel-Q">
+    <h3 class="api-name">NFC_TRANSACTION_EVENT</h3>
+    <div class="api-level">
+      
+    <b><a href="../../preview/">Android Q Developer Preview</a></b>
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+<a href="../../reference/java/lang/String.html">String</a> NFC_TRANSACTION_EVENT</pre>
+    
+    
+
+    
+  <p>Allows applications to receive NFC transaction events.
+ <p>Protection level: normal
+</p></p>
+
+    
+      <p>Constant Value:
+      
+          "android.permission.NFC_TRANSACTION_EVENT"
       
     
 </div>
