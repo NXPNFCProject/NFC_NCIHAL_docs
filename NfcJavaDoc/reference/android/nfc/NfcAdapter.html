@@ -991,12 +991,51 @@ Summary:
     </tr>
     
     
+    <tr class="api apilevel-Q" >
+        <td><code><a href="../../../reference/java/lang/String.html">String</a></code></td>
+        <td width="100%">
+          <code><a href="../../../reference/android/nfc/NfcAdapter.html#ACTION_TRANSACTION_DETECTED">ACTION_TRANSACTION_DETECTED</a></code>
+          <p>Broadcast Action: Intent to notify an application that an transaction event has occurred
+ on the Secure Element.
+          
+    
+</p>
+        </td>
+    </tr>
+    
+    
     <tr class="api apilevel-18" >
         <td><code><a href="../../../reference/java/lang/String.html">String</a></code></td>
         <td width="100%">
           <code><a href="../../../reference/android/nfc/NfcAdapter.html#EXTRA_ADAPTER_STATE">EXTRA_ADAPTER_STATE</a></code>
           <p>Used as an int extra field in <code><a href="../../../reference/android/nfc/NfcAdapter.html#ACTION_ADAPTER_STATE_CHANGED">ACTION_ADAPTER_STATE_CHANGED</a></code>
  intents to request the current power state.
+          
+    
+</p>
+        </td>
+    </tr>
+    
+    
+    <tr class="api apilevel-Q" >
+        <td><code><a href="../../../reference/java/lang/String.html">String</a></code></td>
+        <td width="100%">
+          <code><a href="../../../reference/android/nfc/NfcAdapter.html#EXTRA_AID">EXTRA_AID</a></code>
+          <p>Mandatory byte[] extra field in <code><a href="../../../reference/android/nfc/NfcAdapter.html#ACTION_TRANSACTION_DETECTED">ACTION_TRANSACTION_DETECTED</a></code>
+
+          
+    
+</p>
+        </td>
+    </tr>
+    
+    
+    <tr class="api apilevel-Q" >
+        <td><code><a href="../../../reference/java/lang/String.html">String</a></code></td>
+        <td width="100%">
+          <code><a href="../../../reference/android/nfc/NfcAdapter.html#EXTRA_DATA">EXTRA_DATA</a></code>
+          <p>Optional byte[] extra field in <code><a href="../../../reference/android/nfc/NfcAdapter.html#ACTION_TRANSACTION_DETECTED">ACTION_TRANSACTION_DETECTED</a></code>
+
           
     
 </p>
@@ -1035,6 +1074,19 @@ Summary:
         <td width="100%">
           <code><a href="../../../reference/android/nfc/NfcAdapter.html#EXTRA_READER_PRESENCE_CHECK_DELAY">EXTRA_READER_PRESENCE_CHECK_DELAY</a></code>
           <p>Int Extra for use with <code><a href="../../../reference/android/nfc/NfcAdapter.html#enableReaderMode(android.app.Activity, android.nfc.NfcAdapter.ReaderCallback, int, android.os.Bundle)">enableReaderMode(Activity, ReaderCallback, int, Bundle)</a></code>.
+          
+    
+</p>
+        </td>
+    </tr>
+    
+    
+    <tr class="api apilevel-Q" >
+        <td><code><a href="../../../reference/java/lang/String.html">String</a></code></td>
+        <td width="100%">
+          <code><a href="../../../reference/android/nfc/NfcAdapter.html#EXTRA_SE_NAME">EXTRA_SE_NAME</a></code>
+          <p>Mandatory String extra field in <code><a href="../../../reference/android/nfc/NfcAdapter.html#ACTION_TRANSACTION_DETECTED">ACTION_TRANSACTION_DETECTED</a></code>
+ Indicates the Secure Element on which the transaction occurred.
           
     
 </p>
@@ -2218,6 +2270,41 @@ class
 
 
 
+<A NAME="ACTION_TRANSACTION_DETECTED"></A>
+
+<div class="api apilevel-Q">
+    <h3 class="api-name">ACTION_TRANSACTION_DETECTED</h3>
+    <div class="api-level">
+      
+    <b><a href="../../../preview/">Android Q Developer Preview</a></b>
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+<a href="../../../reference/java/lang/String.html">String</a> ACTION_TRANSACTION_DETECTED</pre>
+    
+    
+
+    
+  <p>Broadcast Action: Intent to notify an application that an transaction event has occurred
+ on the Secure Element.
+
+ <p>This intent will only be sent if the application has requested permission for
+ <code><a href="../../../reference/android/Manifest.permission.html#NFC_TRANSACTION_EVENT">NFC_TRANSACTION_EVENT</a></code> and if the application has the
+ necessary access to Secure Element which witnessed the particular event.
+</p><p>Requires the <code><a href="../../../reference/android/Manifest.permission.html#NFC_TRANSACTION_EVENT">NFC_TRANSACTION_EVENT</a></code> permission.</p>
+
+    
+      <p>Constant Value:
+      
+          "android.nfc.action.TRANSACTION_DETECTED"
+      
+    
+</div>
+
+
+
 <A NAME="EXTRA_ADAPTER_STATE"></A>
 
 <div class="api apilevel-18">
@@ -2247,6 +2334,66 @@ class
       <p>Constant Value:
       
           "android.nfc.extra.ADAPTER_STATE"
+      
+    
+</div>
+
+
+
+<A NAME="EXTRA_AID"></A>
+
+<div class="api apilevel-Q">
+    <h3 class="api-name">EXTRA_AID</h3>
+    <div class="api-level">
+      
+    <b><a href="../../../preview/">Android Q Developer Preview</a></b>
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+<a href="../../../reference/java/lang/String.html">String</a> EXTRA_AID</pre>
+    
+    
+
+    
+  <p>Mandatory byte[] extra field in <code><a href="../../../reference/android/nfc/NfcAdapter.html#ACTION_TRANSACTION_DETECTED">ACTION_TRANSACTION_DETECTED</a></code>
+</p></p>
+
+    
+      <p>Constant Value:
+      
+          "android.nfc.extra.AID"
+      
+    
+</div>
+
+
+
+<A NAME="EXTRA_DATA"></A>
+
+<div class="api apilevel-Q">
+    <h3 class="api-name">EXTRA_DATA</h3>
+    <div class="api-level">
+      
+    <b><a href="../../../preview/">Android Q Developer Preview</a></b>
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+<a href="../../../reference/java/lang/String.html">String</a> EXTRA_DATA</pre>
+    
+    
+
+    
+  <p>Optional byte[] extra field in <code><a href="../../../reference/android/nfc/NfcAdapter.html#ACTION_TRANSACTION_DETECTED">ACTION_TRANSACTION_DETECTED</a></code>
+</p></p>
+
+    
+      <p>Constant Value:
+      
+          "android.nfc.extra.DATA"
       
     
 </div>
@@ -2349,6 +2496,38 @@ class
       <p>Constant Value:
       
           "presence"
+      
+    
+</div>
+
+
+
+<A NAME="EXTRA_SE_NAME"></A>
+
+<div class="api apilevel-Q">
+    <h3 class="api-name">EXTRA_SE_NAME</h3>
+    <div class="api-level">
+      
+    <b><a href="../../../preview/">Android Q Developer Preview</a></b>
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+<a href="../../../reference/java/lang/String.html">String</a> EXTRA_SE_NAME</pre>
+    
+    
+
+    
+  <p>Mandatory String extra field in <code><a href="../../../reference/android/nfc/NfcAdapter.html#ACTION_TRANSACTION_DETECTED">ACTION_TRANSACTION_DETECTED</a></code>
+ Indicates the Secure Element on which the transaction occurred.
+ eSE1...eSEn for Embedded Secure Elements, SIM1...SIMn for UICC, etc.
+</p></p>
+
+    
+      <p>Constant Value:
+      
+          "android.nfc.extra.SE_NAME"
       
     
 </div>
