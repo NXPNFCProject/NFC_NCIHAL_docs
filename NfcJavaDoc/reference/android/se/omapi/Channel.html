@@ -48,7 +48,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NfcBarcode - Android SDK | Android Developers
+  <title>Channel - Android SDK | Android Developers
 </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
@@ -103,7 +103,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
 
 <div itemscope itemtype="http://developers.google.com/ReferenceObject">
 <!-- This DIV closes at the end of the BODY -->
-  <meta itemprop="name" content="android.nfc.tech.NfcBarcode" />
+  <meta itemprop="name" content="android.se.omapi.Channel" />
   
 
   
@@ -360,7 +360,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
   <a href="../../../../reference/android/nfc/package-summary.html">android.nfc</a></li>
     <li>
   <a href="../../../../reference/android/nfc/cardemulation/package-summary.html">android.nfc.cardemulation</a></li>
-    <li class="selected">
+    <li>
   <a href="../../../../reference/android/nfc/tech/package-summary.html">android.nfc.tech</a></li>
     <li>
   <a href="../../../../reference/android/opengl/package-summary.html">android.opengl</a></li>
@@ -386,7 +386,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
   <a href="../../../../reference/android/renderscript/package-summary.html">android.renderscript</a></li>
     <li>
   <a href="../../../../reference/android/sax/package-summary.html">android.sax</a></li>
-    <li>
+    <li class="selected">
   <a href="../../../../reference/android/se/omapi/package-summary.html">android.se.omapi</a></li>
     <li>
   <a href="../../../../reference/android/security/package-summary.html">android.security</a></li>
@@ -648,22 +648,16 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
           
     <li><h2 class="hide-from-toc">Interfaces</h2>
       <ul>
-          <li><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></li>
+          <li><a href="../../../../reference/android/se/omapi/SEService.OnConnectedListener.html">SEService.OnConnectedListener</a></li>
       </ul>
     </li>
           
     <li><h2 class="hide-from-toc">Classes</h2>
       <ul>
-          <li><a href="../../../../reference/android/nfc/tech/IsoDep.html">IsoDep</a></li>
-          <li><a href="../../../../reference/android/nfc/tech/MifareClassic.html">MifareClassic</a></li>
-          <li><a href="../../../../reference/android/nfc/tech/MifareUltralight.html">MifareUltralight</a></li>
-          <li><a href="../../../../reference/android/nfc/tech/Ndef.html">Ndef</a></li>
-          <li><a href="../../../../reference/android/nfc/tech/NdefFormatable.html">NdefFormatable</a></li>
-          <li><a href="../../../../reference/android/nfc/tech/NfcA.html">NfcA</a></li>
-          <li><a href="../../../../reference/android/nfc/tech/NfcB.html">NfcB</a></li>
-          <li class="selected"><a href="../../../../reference/android/nfc/tech/NfcBarcode.html">NfcBarcode</a></li>
-          <li><a href="../../../../reference/android/nfc/tech/NfcF.html">NfcF</a></li>
-          <li><a href="../../../../reference/android/nfc/tech/NfcV.html">NfcV</a></li>
+          <li class="selected"><a href="../../../../reference/android/se/omapi/Channel.html">Channel</a></li>
+          <li><a href="../../../../reference/android/se/omapi/Reader.html">Reader</a></li>
+          <li><a href="../../../../reference/android/se/omapi/SEService.html">SEService</a></li>
+          <li><a href="../../../../reference/android/se/omapi/Session.html">Session</a></li>
       </ul>
     </li>
           
@@ -904,16 +898,13 @@ Summary:
 
 
 
-  <a href="#constants">Constants</a>
-  
 
 
 
 
 
 
-
-  &#124; <a href="#pubmethods">Methods</a>
+  <a href="#pubmethods">Methods</a>
   
 
 
@@ -928,7 +919,7 @@ Summary:
 
 <!-- ======== START OF CLASS DATA ======== -->
 
-<h1 class="api-title">NfcBarcode</h1>
+<h1 class="api-title">Channel</h1>
 <p>
 <code class="api-signature">
   public
@@ -936,7 +927,7 @@ Summary:
   final
   
   class
-  NfcBarcode
+  Channel
 </code>
 <br>
 
@@ -954,7 +945,7 @@ Summary:
   
       implements
       
-        <a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a>
+        <a href="../../../../reference/java/nio/channels/Channel.html">Channel</a>
       
   
   
@@ -974,7 +965,7 @@ Summary:
     
       <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
     
-    <td colspan="1" class="jd-inheritance-class-cell">android.nfc.tech.NfcBarcode
+    <td colspan="1" class="jd-inheritance-class-cell">android.se.omapi.Channel
     </td>
   </tr>
   
@@ -987,14 +978,21 @@ Summary:
 <br><hr>
 
 
-  <p>Provides access to tags containing just a barcode.
+  <p>Instances of this class represent an ISO/IEC 7816-4 channel opened to a
+ Secure Element. It can be either a logical channel or the basic channel. They
+ can be used to send APDUs to the secure element. Channels are opened by
+ calling the Session.openBasicChannel(byte[]) or
+ Session.openLogicalChannel(byte[]) methods.</p>
 
- <p>Acquire an <code><a href="../../../../reference/android/nfc/tech/NfcBarcode.html">NfcBarcode</a></code> object using <code><a href="../../../../reference/android/nfc/tech/NfcBarcode.html#get(android.nfc.Tag)">get(Tag)</a></code>.</p>
 
 
 
 
-
+  <div>
+      <p><b>See also:</b></p>
+      <ul class="nolist"><li><a href="http://globalplatform.org">GlobalPlatform Open Mobile API</a></li>
+      </ul>
+  </div>
 
 
 
@@ -1011,40 +1009,6 @@ Summary:
 
 
 
-
-
-<!-- =========== ENUM CONSTANT SUMMARY =========== -->
-<table id="constants" class="responsive constants">
-<tr><th colspan="2"><h3>Constants</h3></th></tr>
-
-
-    
-    <tr  >
-        <td><code>int</code></td>
-        <td width="100%">
-          <code><a href="../../../../reference/android/nfc/tech/NfcBarcode.html#TYPE_KOVIO">TYPE_KOVIO</a></code>
-          <p>Kovio Tags
-          
-    
-</p>
-        </td>
-    </tr>
-    
-    
-    <tr  >
-        <td><code>int</code></td>
-        <td width="100%">
-          <code><a href="../../../../reference/android/nfc/tech/NfcBarcode.html#TYPE_UNKNOWN">TYPE_UNKNOWN</a></code>
-          <p>
-          
-    
-</p>
-        </td>
-    </tr>
-    
-    
-
-</table>
 
 
 
@@ -1081,62 +1045,10 @@ Summary:
   
     <td width="100%">
       <code>
-      <a href="../../../../reference/android/nfc/tech/NfcBarcode.html#close()">close</a>()
+      <a href="../../../../reference/android/se/omapi/Channel.html#close()">close</a>()
       </code>
       
-        <p>Disable I/O operations to the tag from this <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></code> object, and release resources.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  <tr  >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../../reference/android/nfc/tech/NfcBarcode.html#connect()">connect</a>()
-      </code>
-      
-        <p>Enable I/O operations to the tag from this <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></code> object.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  <tr  >
-  
-  
-    <td><code>
-        
-        
-        static
-        
-        
-        <a href="../../../../reference/android/nfc/tech/NfcBarcode.html">NfcBarcode</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../../reference/android/nfc/tech/NfcBarcode.html#get(android.nfc.Tag)">get</a>(<a href="../../../../reference/android/nfc/Tag.html">Tag</a> tag)
-      </code>
-      
-        <p>Get an instance of <code><a href="../../../../reference/android/nfc/tech/NfcBarcode.html">NfcBarcode</a></code> for the given tag.
+        <p>Closes this channel to the Secure Element.
         
     
 </p>
@@ -1159,10 +1071,11 @@ Summary:
   
     <td width="100%">
       <code>
-      <a href="../../../../reference/android/nfc/tech/NfcBarcode.html#getBarcode()">getBarcode</a>()
+      <a href="../../../../reference/android/se/omapi/Channel.html#getSelectResponse()">getSelectResponse</a>()
       </code>
       
-        <p>Returns the barcode of an NfcBarcode tag.
+        <p>Returns the data as received from the application select command inclusively the status word
+ received at applet selection.
         
     
 </p>
@@ -1180,41 +1093,15 @@ Summary:
         
         
         
-        <a href="../../../../reference/android/nfc/Tag.html">Tag</a></code>
+        <a href="../../../../reference/android/se/omapi/Session.html">Session</a></code>
     </td>
   
     <td width="100%">
       <code>
-      <a href="../../../../reference/android/nfc/tech/NfcBarcode.html#getTag()">getTag</a>()
+      <a href="../../../../reference/android/se/omapi/Channel.html#getSession()">getSession</a>()
       </code>
       
-        <p>Get the <code><a href="../../../../reference/android/nfc/Tag.html">Tag</a></code> object backing this <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></code> object.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  <tr  >
-  
-  
-    <td><code>
-        
-        
-        
-        
-        
-        int</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../../reference/android/nfc/tech/NfcBarcode.html#getType()">getType</a>()
-      </code>
-      
-        <p>Returns the NFC Barcode tag type.
+        <p>Get the session that has opened this channel.
         
     
 </p>
@@ -1237,10 +1124,89 @@ Summary:
   
     <td width="100%">
       <code>
-      <a href="../../../../reference/android/nfc/tech/NfcBarcode.html#isConnected()">isConnected</a>()
+      <a href="../../../../reference/android/se/omapi/Channel.html#isBasicChannel()">isBasicChannel</a>()
       </code>
       
-        <p>Helper to indicate if I/O operations should be possible.
+        <p>Returns a boolean telling if this channel is the basic channel.
+        
+    
+</p>
+      
+    </td>
+  </tr>
+  
+
+  <tr  >
+  
+  
+    <td><code>
+        
+        
+        
+        
+        
+        boolean</code>
+    </td>
+  
+    <td width="100%">
+      <code>
+      <a href="../../../../reference/android/se/omapi/Channel.html#isOpen()">isOpen</a>()
+      </code>
+      
+        <p>Tells if this channel is open.
+        
+    
+</p>
+      
+    </td>
+  </tr>
+  
+
+  <tr  >
+  
+  
+    <td><code>
+        
+        
+        
+        
+        
+        boolean</code>
+    </td>
+  
+    <td width="100%">
+      <code>
+      <a href="../../../../reference/android/se/omapi/Channel.html#selectNext()">selectNext</a>()
+      </code>
+      
+        <p>Performs a selection of the next Applet on this channel that matches to the partial AID
+ specified in the openBasicChannel(byte[] aid) or openLogicalChannel(byte[] aid) method.
+        
+    
+</p>
+      
+    </td>
+  </tr>
+  
+
+  <tr  >
+  
+  
+    <td><code>
+        
+        
+        
+        
+        
+        byte[]</code>
+    </td>
+  
+    <td width="100%">
+      <code>
+      <a href="../../../../reference/android/se/omapi/Channel.html#transmit(byte[])">transmit</a>(byte[] command)
+      </code>
+      
+        <p>Transmit an APDU command (as per ISO/IEC 7816-4) to the Secure Element.
         
     
 </p>
@@ -1587,7 +1553,7 @@ Summary:
     <span class="expand-control">From interface
       <code>
         
-          <a href="../../../../reference/android/nfc/tech/TagTechnology.html">android.nfc.tech.TagTechnology</a>
+          <a href="../../../../reference/java/nio/channels/Channel.html">java.nio.channels.Channel</a>
         
       </code>
     </span>
@@ -1609,62 +1575,10 @@ Summary:
   
     <td width="100%">
       <code>
-      <a href="../../../../reference/android/nfc/tech/TagTechnology.html#close()">close</a>()
+      <a href="../../../../reference/java/nio/channels/Channel.html#close()">close</a>()
       </code>
       
-        <p>Disable I/O operations to the tag from this <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></code> object, and release resources.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  <tr  >
-  
-  
-    <td><code>
-        abstract
-        
-        
-        
-        
-        void</code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../../reference/android/nfc/tech/TagTechnology.html#connect()">connect</a>()
-      </code>
-      
-        <p>Enable I/O operations to the tag from this <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></code> object.
-        
-    
-</p>
-      
-    </td>
-  </tr>
-  
-
-  <tr  >
-  
-  
-    <td><code>
-        abstract
-        
-        
-        
-        
-        <a href="../../../../reference/android/nfc/Tag.html">Tag</a></code>
-    </td>
-  
-    <td width="100%">
-      <code>
-      <a href="../../../../reference/android/nfc/tech/TagTechnology.html#getTag()">getTag</a>()
-      </code>
-      
-        <p>Get the <code><a href="../../../../reference/android/nfc/Tag.html">Tag</a></code> object backing this <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></code> object.
+        <p>Closes this channel.
         
     
 </p>
@@ -1687,10 +1601,10 @@ Summary:
   
     <td width="100%">
       <code>
-      <a href="../../../../reference/android/nfc/tech/TagTechnology.html#isConnected()">isConnected</a>()
+      <a href="../../../../reference/java/nio/channels/Channel.html#isOpen()">isOpen</a>()
       </code>
       
-        <p>Helper to indicate if I/O operations should be possible.
+        <p>Tells whether or not this channel is open.
         
     
 </p>
@@ -1813,63 +1727,6 @@ Summary:
 <!-- Constants -->
 
 
-<!-- ========= ENUM CONSTANTS DETAIL ======== -->
-<h2 class="api-section">Constants</h2>
-
-
-<div  >
-    <h3 class="api-name" id="TYPE_KOVIO">TYPE_KOVIO</h3>
-    <div class="api-level">
-      
-      
-  
-
-    </div>
-<pre class="api-signature no-pretty-print">
-public static final int TYPE_KOVIO</pre>
-    
-    
-
-    
-  <p>Kovio Tags</p></p>
-
-    
-      <p>Constant Value:
-      
-          1
-          (0x00000001)
-      
-    
-</div>
-
-<div  >
-    <h3 class="api-name" id="TYPE_UNKNOWN">TYPE_UNKNOWN</h3>
-    <div class="api-level">
-      
-      
-  
-
-    </div>
-<pre class="api-signature no-pretty-print">
-public static final int TYPE_UNKNOWN</pre>
-    
-    
-
-    
-  <p></p></p>
-
-    
-      <p>Constant Value:
-      
-          -1
-          (0xffffffff)
-      
-    
-</div>
-
-
-
-
 <!-- Fields -->
 
 
@@ -1902,24 +1759,16 @@ public void close ()</pre>
     
 
     
-  <p>Disable I/O operations to the tag from this <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></code> object, and release resources.
- <p>Also causes all blocked I/O operations on other thread to be canceled and
- return with <code><a href="../../../../reference/java/io/IOException.html">IOException</a></code>.
-
- <p class="note">Requires the <code><a href="../../../../reference/android/Manifest.permission.html#NFC">Manifest.permission.NFC</a></code> permission.</p></p>
-      <table class="responsive">
-      <tr><th colspan=2>Throws</th></tr>
-        <tr>
-          <td><code><a href="../../../../reference/java/io/IOException.html">IOException</a></code></td>
-          <td width="100%"></td>
-        </tr>
-      </table>
-  
+  <p>Closes this channel to the Secure Element. If the method is called when
+ the channel is already closed, this method will be ignored. The close()
+ method shall wait for completion of any pending transmit(byte[] command)
+ before closing the channel.</p></p>
+    
 
 </div>
 
 <div >
-    <h3 class="api-name" id="connect()">connect</h3>
+    <h3 class="api-name" id="getSelectResponse()">getSelectResponse</h3>
     <div class="api-level">
       <div></div>
       
@@ -1927,148 +1776,24 @@ public void close ()</pre>
 
     </div>
 <pre class="api-signature no-pretty-print">
-public void connect ()</pre>
+public byte[] getSelectResponse ()</pre>
     
     
 
     
-  <p>Enable I/O operations to the tag from this <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></code> object.
- <p>May cause RF activity and may block. Must not be called
- from the main application thread. A blocked call will be canceled with
- <code><a href="../../../../reference/java/io/IOException.html">IOException</a></code> by calling <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html#close()">close()</a></code> from another thread.
- <p>Only one <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></code> object can be connected to a <code><a href="../../../../reference/android/nfc/Tag.html">Tag</a></code> at a time.
- <p>Applications must call <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html#close()">close()</a></code> when I/O operations are complete.
-
- <p class="note">Requires the <code><a href="../../../../reference/android/Manifest.permission.html#NFC">Manifest.permission.NFC</a></code> permission.</p></p>
-      <table class="responsive">
-      <tr><th colspan=2>Throws</th></tr>
-        <tr>
-          <td><code><a href="../../../../reference/java/io/IOException.html">IOException</a></code></td>
-          <td width="100%"></td>
-        </tr>
-      </table>
-  
-
-</div>
-
-<div >
-    <h3 class="api-name" id="get(android.nfc.Tag)">get</h3>
-    <div class="api-level">
-      <div></div>
-      
-  
-
-    </div>
-<pre class="api-signature no-pretty-print">
-public static <a href="../../../../reference/android/nfc/tech/NfcBarcode.html">NfcBarcode</a> get (<a href="../../../../reference/android/nfc/Tag.html">Tag</a> tag)</pre>
-    
-    
-
-    
-  <p>Get an instance of <code><a href="../../../../reference/android/nfc/tech/NfcBarcode.html">NfcBarcode</a></code> for the given tag.
-
- <p>Returns null if <code><a href="../../../../reference/android/nfc/tech/NfcBarcode.html">NfcBarcode</a></code> was not enumerated in <code><a href="../../../../reference/android/nfc/Tag.html#getTechList()">Tag#getTechList</a></code>.
-
- <p>Does not cause any RF activity and does not block.</p></p>
-    
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>tag</code></td>
-        <td width="100%">
-          <code>Tag</code>: an NfcBarcode compatible tag</p></td>
-      </tr>
-    </table>
-    <table class="responsive">
-      <tr><th colspan=2>Returns</th></tr>
-      <tr>
-        <td><code><a href="../../../../reference/android/nfc/tech/NfcBarcode.html">NfcBarcode</a></code></td>
-        <td width="100%">NfcBarcode object
-</p></td>
-      </tr>
-    </table>
-
-</div>
-
-<div >
-    <h3 class="api-name" id="getBarcode()">getBarcode</h3>
-    <div class="api-level">
-      <div></div>
-      
-  
-
-    </div>
-<pre class="api-signature no-pretty-print">
-public byte[] getBarcode ()</pre>
-    
-    
-
-    
-  <p>Returns the barcode of an NfcBarcode tag.
-
- <p> Tags of <code><a href="../../../../reference/android/nfc/tech/NfcBarcode.html#TYPE_KOVIO">TYPE_KOVIO</a></code> return 16 bytes:
-     <ul>
-     <p> The first byte is 0x80 ORd with a manufacturer ID, corresponding
-       to ISO/IEC 7816-6.
-     <p> The second byte describes the payload data format. Defined data
-       format types include the following:<ul>
-       <li>0x00: Reserved for manufacturer assignment</li>
-       <li>0x01: 96-bit URL with "http://www." prefix</li>
-       <li>0x02: 96-bit URL with "https://www." prefix</li>
-       <li>0x03: 96-bit URL with "http://" prefix</li>
-       <li>0x04: 96-bit URL with "https://" prefix</li>
-       <li>0x05: 96-bit GS1 EPC</li>
-       <li>0x06-0xFF: reserved</li>
-       </ul>
-     <p>The following 12 bytes are payload:<ul>
-       <li> In case of a URL payload, the payload is encoded in US-ASCII,
-            following the limitations defined in RFC3987.
-            </li>
-       <li> In case of GS1 EPC data, see <a href="http://www.gs1.org/gsmp/kc/epcglobal/tds/">
-            GS1 Electronic Product Code (EPC) Tag Data Standard (TDS)</a> for more details.
-       </li>
-     </ul>
-     <p>The last 2 bytes comprise the CRC.
-     </ul>
- <p>Does not cause any RF activity and does not block.</p></p>
+  <p>Returns the data as received from the application select command inclusively the status word
+ received at applet selection.
+ The returned byte array contains the data bytes in the following order:
+ [&lt;first data byte&gt;, ..., &lt;last data byte&gt;, &lt;sw1&gt;, &lt;sw2&gt;]</p></p>
     
     <table class="responsive">
       <tr><th colspan=2>Returns</th></tr>
       <tr>
         <td><code>byte[]</code></td>
-        <td width="100%">a byte array containing the barcode</p></td>
-      </tr>
-    </table>
-  <div>
-      <p><b>See also:</b></p>
-      <ul class="nolist"><li><a href="http://www.ietf.org/rfc/rfc3987.txt">RFC 3987</a></li><li><a href="http://www.thinfilm.no/docs/thinfilm-nfc-barcode-datasheet.pdf">
-      Thinfilm NFC Barcode tag specification (previously Kovio NFC Barcode)</a></li><li><a href="http://www.thinfilm.no/docs/thinfilm-nfc-barcode-data-format.pdf">
-      Thinfilm NFC Barcode data format (previously Kovio NFC Barcode)</a></li>
-      </ul>
-  </div>
-
-</div>
-
-<div >
-    <h3 class="api-name" id="getTag()">getTag</h3>
-    <div class="api-level">
-      <div></div>
-      
-  
-
-    </div>
-<pre class="api-signature no-pretty-print">
-public <a href="../../../../reference/android/nfc/Tag.html">Tag</a> getTag ()</pre>
-    
-    
-
-    
-  <p>Get the <code><a href="../../../../reference/android/nfc/Tag.html">Tag</a></code> object backing this <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></code> object.</p></p>
-    <table class="responsive">
-      <tr><th colspan=2>Returns</th></tr>
-      <tr>
-        <td><code><a href="../../../../reference/android/nfc/Tag.html">Tag</a></code></td>
-        <td width="100%">the <code><a href="../../../../reference/android/nfc/Tag.html">Tag</a></code> backing this <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html">TagTechnology</a></code> object.
+        <td width="100%">The data as returned by the application select command inclusively the status word.
+ Only the status word if the application select command has no returned data.
+ Returns null if an application select command has not been performed or the selection
+ response can not be retrieved by the reader implementation.
 </p></td>
       </tr>
     </table>
@@ -2076,7 +1801,7 @@ public <a href="../../../../reference/android/nfc/Tag.html">Tag</a> getTag ()</p
 </div>
 
 <div >
-    <h3 class="api-name" id="getType()">getType</h3>
+    <h3 class="api-name" id="getSession()">getSession</h3>
     <div class="api-level">
       <div></div>
       
@@ -2084,22 +1809,20 @@ public <a href="../../../../reference/android/nfc/Tag.html">Tag</a> getTag ()</p
 
     </div>
 <pre class="api-signature no-pretty-print">
-public int getType ()</pre>
+public <a href="../../../../reference/android/se/omapi/Session.html">Session</a> getSession ()</pre>
     
     
 
     
-  <p>Returns the NFC Barcode tag type.
-
- <p>Currently only one of <code><a href="../../../../reference/android/nfc/tech/NfcBarcode.html#TYPE_KOVIO">TYPE_KOVIO</a></code> or <code><a href="../../../../reference/android/nfc/tech/NfcBarcode.html#TYPE_UNKNOWN">TYPE_UNKNOWN</a></code>.
-
- <p>Does not cause any RF activity and does not block.</p></p>
+  <p>Get the session that has opened this channel.</p></p>
     
     <table class="responsive">
       <tr><th colspan=2>Returns</th></tr>
       <tr>
-        <td><code>int</code></td>
-        <td width="100%">the NFC Barcode tag type
+        <td><code><a href="../../../../reference/android/se/omapi/Session.html">Session</a></code></td>
+        <td width="100%">the session object this channel is bound to.
+ 
+ This value will never be <code>null</code>.
 </p></td>
       </tr>
     </table>
@@ -2107,7 +1830,7 @@ public int getType ()</pre>
 </div>
 
 <div >
-    <h3 class="api-name" id="isConnected()">isConnected</h3>
+    <h3 class="api-name" id="isBasicChannel()">isBasicChannel</h3>
     <div class="api-level">
       <div></div>
       
@@ -2115,24 +1838,216 @@ public int getType ()</pre>
 
     </div>
 <pre class="api-signature no-pretty-print">
-public boolean isConnected ()</pre>
+public boolean isBasicChannel ()</pre>
     
     
 
     
-  <p>Helper to indicate if I/O operations should be possible.
-
- <p>Returns true if <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html#connect()">connect()</a></code> has completed, and <code><a href="../../../../reference/android/nfc/tech/TagTechnology.html#close()">close()</a></code> has not been
- called, and the <code><a href="../../../../reference/android/nfc/Tag.html">Tag</a></code> is not known to be out of range.
- <p>Does not cause RF activity, and does not block.</p></p>
+  <p>Returns a boolean telling if this channel is the basic channel.</p></p>
+    
     <table class="responsive">
       <tr><th colspan=2>Returns</th></tr>
       <tr>
         <td><code>boolean</code></td>
-        <td width="100%">true if I/O operations should be possible
+        <td width="100%"><code>true</code> if this channel is a basic channel. <code>false</code> if
+         this channel is a logical channel.
 </p></td>
       </tr>
     </table>
+
+</div>
+
+<div >
+    <h3 class="api-name" id="isOpen()">isOpen</h3>
+    <div class="api-level">
+      <div></div>
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+public boolean isOpen ()</pre>
+    
+    
+
+    
+  <p>Tells if this channel is open.</p></p>
+    
+    <table class="responsive">
+      <tr><th colspan=2>Returns</th></tr>
+      <tr>
+        <td><code>boolean</code></td>
+        <td width="100%"><code>false</code> if the channel is closed or in case of an error.
+         <code>true</code> otherwise.
+</p></td>
+      </tr>
+    </table>
+
+</div>
+
+<div >
+    <h3 class="api-name" id="selectNext()">selectNext</h3>
+    <div class="api-level">
+      <div></div>
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+public boolean selectNext ()</pre>
+    
+    
+
+    
+  <p>Performs a selection of the next Applet on this channel that matches to the partial AID
+ specified in the openBasicChannel(byte[] aid) or openLogicalChannel(byte[] aid) method.
+ This mechanism can be used by a device application to iterate through all Applets
+ matching to the same partial AID.
+ If selectNext() returns true a new Applet was successfully selected on this channel.
+ If no further Applet exists with matches to the partial AID this method returns false
+ and the already selected Applet stays selected. <br>
+
+ Since the API cannot distinguish between a partial and full AID the API shall rely on the
+ response of the Secure Element for the return value of this method. <br>
+ The implementation of the underlying SELECT command within this method shall use
+ the same values as the corresponding openBasicChannel(byte[] aid) or
+ openLogicalChannel(byte[] aid) command with the option: <br>
+ P2='02' (Next occurrence) <br>
+ The select response stored in the Channel object shall be updated with the APDU
+ response of the SELECT command.</p></p>
+    
+    <table class="responsive">
+      <tr><th colspan=2>Returns</th></tr>
+      <tr>
+        <td><code>boolean</code></td>
+        <td width="100%"><code>true</code> if new Applet was selected on this channel.
+         <code>false</code> he already selected Applet stays selected on this channel.</p></td>
+      </tr>
+    </table>
+      <table class="responsive">
+      <tr><th colspan=2>Throws</th></tr>
+        <tr>
+          <td><code><a href="../../../../reference/java/io/IOException.html">IOException</a></code></td>
+          <td width="100%">if there is a communication problem to the reader or the Secure Element.</td>
+        </tr>
+        <tr>
+          <td><code><a href="../../../../reference/java/lang/IllegalStateException.html">IllegalStateException</a></code></td>
+          <td width="100%">if the channel is used after being closed.</td>
+        </tr>
+        <tr>
+          <td><code><a href="../../../../reference/java/lang/UnsupportedOperationException.html">UnsupportedOperationException</a></code></td>
+          <td width="100%">if this operation is not supported by the card.
+</td>
+        </tr>
+      </table>
+  
+
+</div>
+
+<div >
+    <h3 class="api-name" id="transmit(byte[])">transmit</h3>
+    <div class="api-level">
+      <div></div>
+      
+  
+
+    </div>
+<pre class="api-signature no-pretty-print">
+public byte[] transmit (byte[] command)</pre>
+    
+    
+
+    
+  <p>Transmit an APDU command (as per ISO/IEC 7816-4) to the Secure Element. The
+ underlying layers generate as many TPDUs as necessary to transport this APDU. The
+ API shall ensure that all available data returned from Secure Element, including
+ concatenated responses, are retrieved and made available to the calling application. If a
+ warning status code is received the API wont check for further response data but will
+ return all data received so far and the warning status code.<br>
+ The transport part is invisible from the application. The generated response is the
+ response of the APDU which means that all protocols related responses are handled
+ inside the API or the underlying implementation.<br>
+ The transmit method shall support extended length APDU commands independently of
+ the coding within the ATR.<br>
+ For status word '61 XX' the API or underlying implementation shall issue a GET
+ RESPONSE command as specified by ISO 7816-4 standard with LE=XX; for the status
+ word '6C XX', the API or underlying implementation shall reissue the input command
+ with LE=XX. For other status words, the API (or underlying implementation) shall return
+ the complete response including data and status word to the device application. The API
+ (or underlying implementation) shall not handle internally the received status words. The
+ channel shall not be closed even if the Secure Element answered with an error code.
+ The system ensures the synchronization between all the concurrent calls to this method,
+ and that only one APDU will be sent at a time, irrespective of the number of TPDUs that
+ might be required to transport it to the SE. The entire APDU communication to this SE is
+ locked to the APDU.<br>
+ The channel information in the class byte in the APDU will be ignored. The system will
+ add any required information to ensure the APDU is transported on this channel.
+ The only restrictions on the set of commands that can be sent is defined below, the API
+ implementation shall be able to send all other commands: <br>
+ <ul>
+ <li>MANAGE_CHANNEL commands are not allowed.</li>
+ <li>SELECT by DF Name (p1=04) are not allowed.</li>
+ <li>CLA bytes with channel numbers are de-masked.</li>
+ </ul></p></p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>command</code></td>
+        <td width="100%">
+          <code>byte</code>: the APDU command to be transmitted, as a byte array.
+
+ This value must never be <code>null</code>.</p></td>
+      </tr>
+    </table>
+    <table class="responsive">
+      <tr><th colspan=2>Returns</th></tr>
+      <tr>
+        <td><code>byte[]</code></td>
+        <td width="100%">the response received, as a byte array. The returned byte array contains the data
+ bytes in the following order:
+ [&lt;first data byte&gt;, ..., &lt;last data byte&gt;, &lt;sw1&gt;, &lt;sw2&gt;]
+
+ This value will never be <code>null</code>.</p></td>
+      </tr>
+    </table>
+      <table class="responsive">
+      <tr><th colspan=2>Throws</th></tr>
+        <tr>
+          <td><code><a href="../../../../reference/java/io/IOException.html">IOException</a></code></td>
+          <td width="100%">if there is a communication problem to the reader or the Secure Element.</td>
+        </tr>
+        <tr>
+          <td><code><a href="../../../../reference/java/lang/IllegalStateException.html">IllegalStateException</a></code></td>
+          <td width="100%">if the channel is used after being closed.</td>
+        </tr>
+        <tr>
+          <td><code><a href="../../../../reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></code></td>
+          <td width="100%">if the command byte array is less than 4 bytes long.</td>
+        </tr>
+        <tr>
+          <td><code><a href="../../../../reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></code></td>
+          <td width="100%">if Lc byte is inconsistent with length of the byte array.</td>
+        </tr>
+        <tr>
+          <td><code><a href="../../../../reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></code></td>
+          <td width="100%">if CLA byte is invalid according to [2] (0xff).</td>
+        </tr>
+        <tr>
+          <td><code><a href="../../../../reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></code></td>
+          <td width="100%">if INS byte is invalid according to [2] (0x6x or 0x9x).</td>
+        </tr>
+        <tr>
+          <td><code><a href="../../../../reference/java/lang/SecurityException.html">SecurityException</a></code></td>
+          <td width="100%">if the command is filtered by the security policy.</td>
+        </tr>
+        <tr>
+          <td><code><a href="../../../../reference/java/lang/NullPointerException.html">NullPointerException</a></code></td>
+          <td width="100%">if command is NULL.
+</td>
+        </tr>
+      </table>
+  
 
 </div>
 
