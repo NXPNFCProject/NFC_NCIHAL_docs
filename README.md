@@ -7,6 +7,11 @@
 | :-------------: |:-------------:| 
 | NFC_NCIHAL_docs    |  git clone https://github.com/NXPNFCProject/NFC_NCIHAL_docs.git |
 
+#### Supported Version on "br_android_ncihalx_comm_11" branch
+| Android Version        | NXP Release          | NXP Tag  |
+| :-------------: |:---------------------:| :-----:|
+| android-11.0.0_r3              |  11.0.600 (SN1xx) |  NFC_AR_00_6000_11.06.00_OpnSrc (For Early Integration only. Contact NXP support for further information) |
+
 #### Supported Version on "br_android_ncihalx_11" branch
 | Android Version        | NXP Release          | NXP Tag  |
 | :-------------: |:---------------------:| :-----:|
