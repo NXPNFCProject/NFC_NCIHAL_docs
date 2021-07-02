@@ -320,7 +320,13 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     <li>
   <a href="../reference/android/net/package-summary.html">android.net</a></li>
     <li>
+  <a href="../reference/android/net/eap/package-summary.html">android.net.eap</a></li>
+    <li>
   <a href="../reference/android/net/http/package-summary.html">android.net.http</a></li>
+    <li>
+  <a href="../reference/android/net/ipsec/ike/package-summary.html">android.net.ipsec.ike</a></li>
+    <li>
+  <a href="../reference/android/net/ipsec/ike/exceptions/package-summary.html">android.net.ipsec.ike.exceptions</a></li>
     <li>
   <a href="../reference/android/net/nsd/package-summary.html">android.net.nsd</a></li>
     <li>
@@ -329,6 +335,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
   <a href="../reference/android/net/sip/package-summary.html">android.net.sip</a></li>
     <li>
   <a href="../reference/android/net/ssl/package-summary.html">android.net.ssl</a></li>
+    <li>
+  <a href="../reference/android/net/vcn/package-summary.html">android.net.vcn</a></li>
     <li>
   <a href="../reference/android/net/wifi/package-summary.html">android.net.wifi</a></li>
     <li>
@@ -489,6 +497,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
   <a href="../reference/android/widget/package-summary.html">android.widget</a></li>
     <li>
   <a href="../reference/android/widget/inline/package-summary.html">android.widget.inline</a></li>
+    <li>
+  <a href="../reference/com/android/net/module/util/package-summary.html">com.android.net.module.util</a></li>
     <li>
   <a href="../reference/com/google/android/collect/package-summary.html">com.google.android.collect</a></li>
     <li>
@@ -2181,7 +2191,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/nio/file/attribute/AclEntryFlag.html">AclEntryFlag</a></td>
             <td class="jd-descrcol" width="100%">
-              Defines the flags for used by the flags component of an ACL <code><a href="../reference/java/nio/file/attribute/AclEntry.html">AclEntry</a></code>.&nbsp;
+              Defines the flags for used by the flags component of an ACL <code><a href="../reference/java/nio/file/attribute/AclEntry.html">entry</a></code>.&nbsp;
               
     
 
@@ -2193,7 +2203,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/java/nio/file/attribute/AclEntryPermission.html">AclEntryPermission</a></td>
             <td class="jd-descrcol" width="100%">
               Defines the permissions for use with the permissions component of an ACL
- <code><a href="../reference/java/nio/file/attribute/AclEntry.html">AclEntry</a></code>.&nbsp;
+ <code><a href="../reference/java/nio/file/attribute/AclEntry.html">entry</a></code>.&nbsp;
               
     
 
@@ -3958,6 +3968,28 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/security/AppUriAuthenticationPolicy.html">AppUriAuthenticationPolicy</a></td>
+            <td class="jd-descrcol" width="100%">
+              The app-URI authentication policy is set by the credential management app.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/security/AppUriAuthenticationPolicy.Builder.html">AppUriAuthenticationPolicy.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              Builder class for <code><a href="../reference/android/security/AppUriAuthenticationPolicy.html">AppUriAuthenticationPolicy</a></code> objects.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/appwidget/AppWidgetHost.html">AppWidgetHost</a></td>
             <td class="jd-descrcol" width="100%">
               AppWidgetHost provides the interaction with the AppWidget service for apps,
@@ -4101,7 +4133,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/concurrent/ArrayBlockingQueue.html">ArrayBlockingQueue</a>&lt;E&gt;</td>
             <td class="jd-descrcol" width="100%">
-              A bounded <a href="../reference/java/util/concurrent/BlockingQueue.html">BlockingQueue</a></a> backed by an
+              A bounded <a href="../reference/java/util/concurrent/BlockingQueue.html">blocking queue</a></a> backed by an
  array.&nbsp;
               
     
@@ -4264,7 +4296,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/content/res/AssetFileDescriptor.AutoCloseInputStream.html">AssetFileDescriptor.AutoCloseInputStream</a></td>
             <td class="jd-descrcol" width="100%">
               An InputStream you can create on a ParcelFileDescriptor, which will
- take care of calling <code><a href="../reference/android/os/ParcelFileDescriptor.html#close()">ParcelFileDescriptor#close</a></code> for you when the stream is closed.&nbsp;
+ take care of calling <code><a href="../reference/android/os/ParcelFileDescriptor.html#close()">ParcelFileDescriptor.close()</a></code> for you when the stream is closed.&nbsp;
               
     
 
@@ -4276,7 +4308,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/content/res/AssetFileDescriptor.AutoCloseOutputStream.html">AssetFileDescriptor.AutoCloseOutputStream</a></td>
             <td class="jd-descrcol" width="100%">
               An OutputStream you can create on a ParcelFileDescriptor, which will
- take care of calling <code><a href="../reference/android/os/ParcelFileDescriptor.html#close()">ParcelFileDescriptor#close</a></code> for you when the stream is closed.&nbsp;
+ take care of calling <code><a href="../reference/android/os/ParcelFileDescriptor.html#close()">ParcelFileDescriptor.close()</a></code> for you when the stream is closed.&nbsp;
               
     
 
@@ -4480,7 +4512,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/app/AsyncNotedAppOp.html">AsyncNotedAppOp</a></td>
             <td class="jd-descrcol" width="100%">
-              When an <code><a href="../reference/android/app/AppOpsManager.html#noteOp(java.lang.String,%20int,%20java.lang.String,%20java.lang.String,%20java.lang.String)">AppOpsManager#noteOp(String, int, String, String, String)</a></code> and the
+              When an <code><a href="../reference/android/app/AppOpsManager.html#noteOp(java.lang.String,%20int,%20java.lang.String,%20java.lang.String,%20java.lang.String)">app-op is noted</a></code> and the
  app the app-op is noted for has a <code><a href="../reference/android/app/AppOpsManager.OnOpNotedCallback.html">AppOpsManager.OnOpNotedCallback</a></code> registered the
  note-event needs to be delivered to the callback.&nbsp;
               
@@ -4962,8 +4994,10 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/rtp/AudioCodec.html">AudioCodec</a></td>
             <td class="jd-descrcol" width="100%">
-              This class defines a collection of audio codecs to be used with
- <code><a href="../reference/android/net/rtp/AudioStream.html">AudioStream</a></code>s.&nbsp;
+              <em>
+      This class is deprecated.
+    <code><a href="../reference/android/net/sip/SipManager.html">SipManager</a></code> and associated classes are no longer
+ supported and should not be used as the basis of future VOIP apps.</em>&nbsp;
               
     
 
@@ -5092,8 +5126,10 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/rtp/AudioGroup.html">AudioGroup</a></td>
             <td class="jd-descrcol" width="100%">
-              An AudioGroup is an audio hub for the speaker, the microphone, and
- <code><a href="../reference/android/net/rtp/AudioStream.html">AudioStream</a></code>s.&nbsp;
+              <em>
+      This class is deprecated.
+    <code><a href="../reference/android/net/sip/SipManager.html">SipManager</a></code> and associated classes are no longer supported and
+ should not be used as the basis of future VOIP apps.</em>&nbsp;
               
     
 
@@ -5139,6 +5175,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-descrcol" width="100%">
               Interface definition for a callback to be invoked when the audio focus of the system is
  updated.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/media/AudioManager.OnCommunicationDeviceChangedListener.html">AudioManager.OnCommunicationDeviceChangedListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Listener registered by client to be notified upon communication audio device change.&nbsp;
               
     
 
@@ -5375,8 +5422,10 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/rtp/AudioStream.html">AudioStream</a></td>
             <td class="jd-descrcol" width="100%">
-              An AudioStream is a <code><a href="../reference/android/net/rtp/RtpStream.html">RtpStream</a></code> which carrys audio payloads over
- Real-time Transport Protocol (RTP).&nbsp;
+              <em>
+      This class is deprecated.
+    <code><a href="../reference/android/net/sip/SipManager.html">SipManager</a></code> and associated classes are no longer supported and
+ should not be used as the basis of future VOIP apps.</em>&nbsp;
               
     
 
@@ -5471,6 +5520,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/media/AudioTrack.StreamEventCallback.html">AudioTrack.StreamEventCallback</a></td>
             <td class="jd-descrcol" width="100%">
               Abstract class to receive event notifications about the stream playback in offloaded mode.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/AuthenticationFailedException.html">AuthenticationFailedException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown when IKE authentication failed.&nbsp;
               
     
 
@@ -5729,6 +5789,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/security/keystore/BackendBusyException.html">BackendBusyException</a></td>
+            <td class="jd-descrcol" width="100%">
+              Indicates a transient error that prevented a key operation from being created.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/text/style/BackgroundColorSpan.html">BackgroundColorSpan</a></td>
             <td class="jd-descrcol" width="100%">
               Changes the background color of the text to which the span is attached.&nbsp;
@@ -5782,7 +5853,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-descrcol" width="100%">
               Provides the structured interface through which a <code><a href="../reference/android/app/backup/BackupAgent.html">BackupAgent</a></code> reads
  information from the backup data set, via its
- <code><a href="../reference/android/app/backup/BackupAgent.html#onRestore(android.app.backup.BackupDataInput,%20int,%20android.os.ParcelFileDescriptor)">BackupAgent#onRestore(BackupDataInput, int, android.os.ParcelFileDescriptor)</a></code>
+ <code><a href="../reference/android/app/backup/BackupAgent.html#onRestore(android.app.backup.BackupDataInput,%20int,%20android.os.ParcelFileDescriptor)">onRestore()</a></code>
  method.&nbsp;
               
     
@@ -5807,7 +5878,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/app/backup/BackupDataOutput.html">BackupDataOutput</a></td>
             <td class="jd-descrcol" width="100%">
               Provides the structured interface through which a <code><a href="../reference/android/app/backup/BackupAgent.html">BackupAgent</a></code> commits
- information to the backup data set, via its <code><a href="../reference/android/app/backup/BackupAgent.html#onBackup(android.os.ParcelFileDescriptor,%20android.app.backup.BackupDataOutput,%20android.os.ParcelFileDescriptor)">BackupAgent#onBackup(ParcelFileDescriptor,BackupDataOutput,ParcelFileDescriptor)</a></code> method.&nbsp;
+ information to the backup data set, via its <code><a href="../reference/android/app/backup/BackupAgent.html#onBackup(android.os.ParcelFileDescriptor,%20android.app.backup.BackupDataOutput,%20android.os.ParcelFileDescriptor)">onBackup()</a></code> method.&nbsp;
               
     
 
@@ -6190,7 +6261,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/service/autofill/BatchUpdates.html">BatchUpdates</a></td>
             <td class="jd-descrcol" width="100%">
-              Defines actions to be applied to a <code><a href="../reference/android/widget/RemoteViews.html">RemoteViews</a></code>.&nbsp;
+              Defines actions to be applied to a <code><a href="../reference/android/widget/RemoteViews.html">template presentation</a></code>.&nbsp;
               
     
 
@@ -6339,7 +6410,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/math/BigDecimal.html">BigDecimal</a></td>
             <td class="jd-descrcol" width="100%">
-              An immutable arbitrary-precision signed decimal.&nbsp;
+              Immutable, arbitrary-precision signed decimal numbers.&nbsp;
               
     
 
@@ -6350,7 +6421,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/math/BigInteger.html">BigInteger</a></td>
             <td class="jd-descrcol" width="100%">
-              An immutable arbitrary-precision signed integer.&nbsp;
+              Immutable arbitrary-precision integers.&nbsp;
               
     
 
@@ -7055,6 +7126,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/bluetooth/BluetoothLeAudio.html">BluetoothLeAudio</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class provides the public APIs to control the LeAudio profile.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/companion/BluetoothLeDeviceFilter.html">BluetoothLeDeviceFilter</a></td>
             <td class="jd-descrcol" width="100%">
               A filter for Bluetooth LE devices&nbsp;
@@ -7432,6 +7514,28 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/os/BugreportManager.html">BugreportManager</a></td>
+            <td class="jd-descrcol" width="100%">
+              Class that provides a privileged API to capture and consume bugreports.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/os/BugreportManager.BugreportCallback.html">BugreportManager.BugreportCallback</a></td>
+            <td class="jd-descrcol" width="100%">
+              An interface describing the callback for bugreport progress and status.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/os/Build.html">Build</a></td>
             <td class="jd-descrcol" width="100%">
               Information about the current build, extracted from system properties.&nbsp;
@@ -7683,7 +7787,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/icu/util/Calendar.WeekData.html">Calendar.WeekData</a></td>
             <td class="jd-descrcol" width="100%">
-              Simple, immutable struct-like class for access to the CLDR weekend data.&nbsp;
+              Simple, immutable struct-like class for access to the CLDR week data.&nbsp;
               
     
 
@@ -8515,7 +8619,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/hardware/camera2/CameraManager.html">CameraManager</a></td>
             <td class="jd-descrcol" width="100%">
               <p>A system service manager for detecting, characterizing, and connecting to
- <code><a href="../reference/android/hardware/camera2/CameraDevice.html">CameraDevice</a></code>.&nbsp;
+ <code><a href="../reference/android/hardware/camera2/CameraDevice.html">CameraDevices</a></code>.&nbsp;
               
     
 
@@ -9033,7 +9137,9 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/telephony/cdma/CdmaCellLocation.html">CdmaCellLocation</a></td>
             <td class="jd-descrcol" width="100%">
-              Represents the cell location on a CDMA phone.&nbsp;
+              <em>
+      This class is deprecated.
+    use <code><a href="../reference/android/telephony/CellIdentity.html">CellIdentity</a></code>.</em>&nbsp;
               
     
 
@@ -9198,7 +9304,9 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/telephony/CellLocation.html">CellLocation</a></td>
             <td class="jd-descrcol" width="100%">
-              Abstract class that represents the location of the device.  &nbsp;
+              <em>
+      This class is deprecated.
+    use <code><a href="../reference/android/telephony/CellIdentity.html">CellIdentity</a></code>.</em>&nbsp;
               
     
 
@@ -10159,6 +10267,73 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/ChildSaNotFoundException.html">ChildSaNotFoundException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown if the remote server received a request for a nonexistent Child SA.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/ChildSaProposal.html">ChildSaProposal</a></td>
+            <td class="jd-descrcol" width="100%">
+              ChildSaProposal represents a proposed configuration to negotiate a Child SA.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/ChildSaProposal.Builder.html">ChildSaProposal.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class is used to incrementally construct a ChildSaProposal.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/ChildSessionCallback.html">ChildSessionCallback</a></td>
+            <td class="jd-descrcol" width="100%">
+              Callback interface for receiving state changes of a Child Session.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/ChildSessionConfiguration.html">ChildSessionConfiguration</a></td>
+            <td class="jd-descrcol" width="100%">
+              ChildSessionConfiguration represents the negotiated configuration for a Child Session.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/ChildSessionParams.html">ChildSessionParams</a></td>
+            <td class="jd-descrcol" width="100%">
+              ChildSessionParams is an abstract class that represents proposed configurations for negotiating a
+ Child Session.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/icu/util/ChineseCalendar.html">ChineseCalendar</a></td>
             <td class="jd-descrcol" width="100%">
               <code>ChineseCalendar</code> is a concrete subclass of <code><a href="../reference/android/icu/util/Calendar.html">Calendar</a></code>
@@ -10788,8 +10963,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/nio/charset/CoderMalfunctionError.html">CoderMalfunctionError</a></td>
             <td class="jd-descrcol" width="100%">
-              Error thrown when the <code><a href="../reference/java/nio/charset/CharsetDecoder.html#decodeLoop(java.nio.ByteBuffer,%20java.nio.CharBuffer)">CharsetDecoder#decodeLoop</a></code> method of
- a <code><a href="../reference/java/nio/charset/CharsetDecoder.html">CharsetDecoder</a></code>, or the <code><a href="../reference/java/nio/charset/CharsetEncoder.html#encodeLoop(java.nio.CharBuffer,%20java.nio.ByteBuffer)">CharsetEncoder#encodeLoop</a></code> method of a <code><a href="../reference/java/nio/charset/CharsetEncoder.html">CharsetEncoder</a></code>, throws an unexpected
+              Error thrown when the <code><a href="../reference/java/nio/charset/CharsetDecoder.html#decodeLoop(java.nio.ByteBuffer,%20java.nio.CharBuffer)">decodeLoop</a></code> method of
+ a <code><a href="../reference/java/nio/charset/CharsetDecoder.html">CharsetDecoder</a></code>, or the <code><a href="../reference/java/nio/charset/CharsetEncoder.html#encodeLoop(java.nio.CharBuffer,%20java.nio.ByteBuffer)">encodeLoop</a></code> method of a <code><a href="../reference/java/nio/charset/CharsetEncoder.html">CharsetEncoder</a></code>, throws an unexpected
  exception.&nbsp;
               
     
@@ -10986,6 +11161,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/com/android/net/module/util/CollectionUtils.html">CollectionUtils</a></td>
+            <td class="jd-descrcol" width="100%">
+              Utilities for <code><a href="../reference/java/util/Collection.html">Collection</a></code> and arrays.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/stream/Collector.html">Collector</a>&lt;T,&nbsp;A,&nbsp;R&gt;</td>
             <td class="jd-descrcol" width="100%">
               A <a href="package-summary.html#Reduction">mutable reduction operation</a> that
@@ -11152,7 +11338,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/graphics/ColorSpace.RenderIntent.html">ColorSpace.RenderIntent</a></td>
             <td class="jd-descrcol" width="100%">
-              <p>A render intent determines how a <code><a href="../reference/android/graphics/ColorSpace.Connector.html">ColorSpace.Connector</a></code>
+              <p>A render intent determines how a <code><a href="../reference/android/graphics/ColorSpace.Connector.html">connector</a></code>
  maps colors from one color space to another.&nbsp;
               
     
@@ -11167,7 +11353,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
               <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
  <p>An RGB color space is an additive color space using the
- <code><a href="../reference/android/graphics/ColorSpace.Model.html#RGB">Model#RGB</a></code> color model (a color is therefore represented
+ <code><a href="../reference/android/graphics/ColorSpace.Model.html#RGB">RGB</a></code> color model (a color is therefore represented
  by a tuple of 3 numbers).&nbsp;
               
     
@@ -11591,7 +11777,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/concurrent/ConcurrentLinkedDeque.html">ConcurrentLinkedDeque</a>&lt;E&gt;</td>
             <td class="jd-descrcol" width="100%">
-              An unbounded concurrent <a href="../reference/java/util/Deque.html">Deque</a></a> based on linked nodes.&nbsp;
+              An unbounded concurrent <a href="../reference/java/util/Deque.html">deque</a></a> based on linked nodes.&nbsp;
               
     
 
@@ -11602,7 +11788,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/concurrent/ConcurrentLinkedQueue.html">ConcurrentLinkedQueue</a>&lt;E&gt;</td>
             <td class="jd-descrcol" width="100%">
-              An unbounded thread-safe <a href="../reference/java/util/Queue.html">Queue</a></a> based on linked nodes.&nbsp;
+              An unbounded thread-safe <a href="../reference/java/util/Queue.html">queue</a></a> based on linked nodes.&nbsp;
               
     
 
@@ -11685,8 +11871,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/java/util/concurrent/locks/Condition.html">Condition</a></td>
             <td class="jd-descrcol" width="100%">
               <code>Condition</code> factors out the <code>Object</code> monitor
- methods (<code><a href="../reference/java/lang/Object.html#wait()">Object#wait()</a></code>, <code><a href="../reference/java/lang/Object.html#notify()">Object#notify</a></code>
- and <code><a href="../reference/java/lang/Object.html#notifyAll()">Object#notifyAll</a></code>) into distinct objects to
+ methods (<code><a href="../reference/java/lang/Object.html#wait()">wait</a></code>, <code><a href="../reference/java/lang/Object.html#notify()">notify</a></code>
+ and <code><a href="../reference/java/lang/Object.html#notifyAll()">notifyAll</a></code>) into distinct objects to
  give the effect of having multiple wait-sets per object, by
  combining them with the use of arbitrary <code><a href="../reference/java/util/concurrent/locks/Lock.html">Lock</a></code> implementations.&nbsp;
               
@@ -12102,6 +12288,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/com/android/net/module/util/ConnectivityUtils.html">ConnectivityUtils</a></td>
+            <td class="jd-descrcol" width="100%">
+              Various utilities used in connectivity code.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/org/apache/http/conn/ConnectTimeoutException.html">ConnectTimeoutException</a></td>
             <td class="jd-descrcol" width="100%">
               <em>
@@ -12165,6 +12362,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/java/lang/invoke/ConstantCallSite.html">ConstantCallSite</a></td>
             <td class="jd-descrcol" width="100%">
               A <code>ConstantCallSite</code> is a <code><a href="../reference/java/lang/invoke/CallSite.html">CallSite</a></code> whose target is permanent, and can never be changed.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/icu/text/ConstrainedFieldPosition.html">ConstrainedFieldPosition</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents a span of a string containing a given field.&nbsp;
               
     
 
@@ -13316,7 +13524,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/provider/ContactsContract.SearchSnippets.html">ContactsContract.SearchSnippets</a></td>
             <td class="jd-descrcol" width="100%">
               Additional column returned by
- <code><a href="../reference/android/provider/ContactsContract.Contacts.html#CONTENT_FILTER_URI">ContactsContract.Contacts#CONTENT_FILTER_URI</a></code> explaining
+ <code><a href="../reference/android/provider/ContactsContract.Contacts.html#CONTENT_FILTER_URI">Contacts.CONTENT_FILTER_URI</a></code> explaining
  why the filter matched the contact.&nbsp;
               
     
@@ -14741,7 +14949,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/view/contentcapture/DataRemovalRequest.html">DataRemovalRequest</a></td>
             <td class="jd-descrcol" width="100%">
               Class used by apps to request the content capture service to remove data associated with
- <code><a href="../reference/android/content/LocusId.html">LocusId</a></code>.&nbsp;
+ <code><a href="../reference/android/content/LocusId.html">LocusIds</a></code>.&nbsp;
               
     
 
@@ -15056,6 +15264,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/icu/text/DateIntervalFormat.FormattedDateInterval.html">DateIntervalFormat.FormattedDateInterval</a></td>
+            <td class="jd-descrcol" width="100%">
+              An immutable class containing the result of a date interval formatting operation.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/icu/text/DateIntervalInfo.html">DateIntervalInfo</a></td>
             <td class="jd-descrcol" width="100%">
               DateIntervalInfo is a public class for encapsulating localizable
@@ -15243,7 +15462,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/service/autofill/DateTransformation.html">DateTransformation</a></td>
             <td class="jd-descrcol" width="100%">
               Replaces a <code><a href="../reference/android/widget/TextView.html">TextView</a></code> child of a <code><a href="../reference/android/service/autofill/CustomDescription.html">CustomDescription</a></code> with the contents of a field
- that is expected to have a <code><a href="../reference/android/view/autofill/AutofillValue.html#forDate(long)">AutofillValue#forDate(long)</a></code>.&nbsp;
+ that is expected to have a <code><a href="../reference/android/view/autofill/AutofillValue.html#forDate(long)">date value</a></code>.&nbsp;
               
     
 
@@ -15524,7 +15743,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/concurrent/DelayQueue.html">DelayQueue</a>&lt;E&nbsp;extends&nbsp;<a href="../reference/java/util/concurrent/Delayed.html">Delayed</a>&gt;</td>
             <td class="jd-descrcol" width="100%">
-              An unbounded <a href="../reference/java/util/concurrent/BlockingQueue.html">BlockingQueue</a></a> of
+              An unbounded <a href="../reference/java/util/concurrent/BlockingQueue.html">blocking queue</a></a> of
  <code>Delayed</code> elements, in which an element can only be taken
  when its delay has expired.&nbsp;
               
@@ -15571,9 +15790,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/lang/Deprecated.html">Deprecated</a></td>
             <td class="jd-descrcol" width="100%">
-              A program element annotated &#64;Deprecated is one that programmers
- are discouraged from using, typically because it is dangerous,
- or because a better alternative exists.&nbsp;
+              A program element annotated <code>@Deprecated</code> is one that programmers
+ are discouraged from using.&nbsp;
               
     
 
@@ -16161,6 +16379,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/DisconnectCause.html">DisconnectCause</a></td>
+            <td class="jd-descrcol" width="100%">
+              Describes the cause of a disconnected call.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/wifi/aware/DiscoverySession.html">DiscoverySession</a></td>
             <td class="jd-descrcol" width="100%">
               A class representing a single publish or subscribe Aware session.&nbsp;
@@ -16423,8 +16652,9 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/lang/annotation/Documented.html">Documented</a></td>
             <td class="jd-descrcol" width="100%">
-              Indicates that annotations with a type are to be documented by javadoc
- and similar tools by default.&nbsp;
+              If the annotation <code>@Documented</code> is present on the declaration
+ of an annotation type <i>A</i>, then any <code>@A</code> annotation on
+ an element is considered part of the element's public contract.&nbsp;
               
     
 
@@ -16949,6 +17179,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
               Information about a subscription which is downloadable to an eUICC using
  <code><a href="../reference/android/telephony/euicc/EuiccManager.html#downloadSubscription(android.telephony.euicc.DownloadableSubscription,%20boolean,%20android.app.PendingIntent)">EuiccManager#downloadSubscription(DownloadableSubscription, boolean, PendingIntent)</a></code>
 &nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/euicc/DownloadableSubscription.Builder.html">DownloadableSubscription.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              &nbsp;
               
     
 
@@ -17836,6 +18077,94 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/eap/EapSessionConfig.html">EapSessionConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              EapSessionConfig represents a container for EAP method configuration.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/eap/EapSessionConfig.Builder.html">EapSessionConfig.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class can be used to incrementally construct an <code><a href="../reference/android/net/eap/EapSessionConfig.html">EapSessionConfig</a></code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/eap/EapSessionConfig.EapAkaConfig.html">EapSessionConfig.EapAkaConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              EapAkaConfig represents the configs needed for an EAP AKA session.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/eap/EapSessionConfig.EapAkaPrimeConfig.html">EapSessionConfig.EapAkaPrimeConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              EapAkaPrimeConfig represents the configs needed for an EAP-AKA' session.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/eap/EapSessionConfig.EapMethodConfig.html">EapSessionConfig.EapMethodConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              EapMethodConfig represents a generic EAP method configuration.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/eap/EapSessionConfig.EapMsChapV2Config.html">EapSessionConfig.EapMsChapV2Config</a></td>
+            <td class="jd-descrcol" width="100%">
+              EapMsChapV2Config represents the configs needed for an EAP MSCHAPv2 session.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/eap/EapSessionConfig.EapSimConfig.html">EapSessionConfig.EapSimConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              EapSimConfig represents the configs needed for an EAP SIM session.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/eap/EapSessionConfig.EapTtlsConfig.html">EapSessionConfig.EapTtlsConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              EapTtlsConfig represents the configs needed for an EAP-TTLS session.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/wifi/EasyConnectStatusCallback.html">EasyConnectStatusCallback</a></td>
             <td class="jd-descrcol" width="100%">
               Easy Connect (DPP) Status Callback.&nbsp;
@@ -18013,7 +18342,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/text/Editable.Factory.html">Editable.Factory</a></td>
             <td class="jd-descrcol" width="100%">
-              Factory used by TextView to create new <code><a href="../reference/android/text/Editable.html">Editable</a></code>.&nbsp;
+              Factory used by TextView to create new <code><a href="../reference/android/text/Editable.html">Editables</a></code>.&nbsp;
               
     
 
@@ -19175,7 +19504,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/media/ExifInterface.html">ExifInterface</a></td>
             <td class="jd-descrcol" width="100%">
-              This is a class for reading and writing Exif tags in a JPEG file or a RAW image file.&nbsp;
+              This is a class for reading and writing Exif tags in various image file formats.&nbsp;
               
     
 
@@ -19459,6 +19788,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
               This transition tracks changes to the visibility of target views in the
  start and end scenes and fades views in or out when they become visible
  or non-visible.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/FailedCpRequiredException.html">FailedCpRequiredException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown if the remote server did not receive a Configuration Payload.&nbsp;
               
     
 
@@ -20068,7 +20408,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/service/autofill/FillContext.html">FillContext</a></td>
             <td class="jd-descrcol" width="100%">
-              This class represents a context for each fill request made via <code><a href="../reference/android/service/autofill/AutofillService.html#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)">AutofillService#onFillRequest(FillRequest, CancellationSignal, FillCallback)</a></code>.&nbsp;
+              This class represents a context for each fill request made via <code><a href="../reference/android/service/autofill/AutofillService.html#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)">AutofillService.onFillRequest(android.service.autofill.FillRequest, android.os.CancellationSignal, android.service.autofill.FillCallback)</a></code>.&nbsp;
               
     
 
@@ -20118,7 +20458,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/service/autofill/FillResponse.html">FillResponse</a></td>
             <td class="jd-descrcol" width="100%">
-              Response for an <code><a href="../reference/android/service/autofill/AutofillService.html#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)">AutofillService#onFillRequest(FillRequest, android.os.CancellationSignal, FillCallback)</a></code>.&nbsp;
+              Response for an <code><a href="../reference/android/service/autofill/AutofillService.html#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)">AutofillService.onFillRequest(android.service.autofill.FillRequest, android.os.CancellationSignal, android.service.autofill.FillCallback)</a></code>.&nbsp;
               
     
 
@@ -20468,8 +20808,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/java/util/concurrent/Flow.html">Flow</a></td>
             <td class="jd-descrcol" width="100%">
               Interrelated interfaces and static methods for establishing
- flow-controlled components in which <code><a href="../reference/java/util/concurrent/Flow.Publisher.html">Publisher</a></code>
- produce items consumed by one or more <code><a href="../reference/java/util/concurrent/Flow.Subscriber.html">Subscriber</a></code>, each managed by a <code><a href="../reference/java/util/concurrent/Flow.Subscription.html">Subscription</a></code>.&nbsp;
+ flow-controlled components in which <code><a href="../reference/java/util/concurrent/Flow.Publisher.html">Publishers</a></code>
+ produce items consumed by one or more <code><a href="../reference/java/util/concurrent/Flow.Subscriber.html">Subscribers</a></code>, each managed by a <code><a href="../reference/java/util/concurrent/Flow.Subscription.html">Subscription</a></code>.&nbsp;
               
     
 
@@ -20820,7 +21160,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/FormattableFlags.html">FormattableFlags</a></td>
             <td class="jd-descrcol" width="100%">
-              FomattableFlags are passed to the <code><a href="../reference/java/util/Formattable.html#formatTo(java.util.Formatter,%20int,%20int,%20int)">Formattable#formatTo</a></code> method and modify the output format for <a href="../reference/java/util/Formattable.html">Formattable</a></a>.&nbsp;
+              FomattableFlags are passed to the <code><a href="../reference/java/util/Formattable.html#formatTo(java.util.Formatter,%20int,%20int,%20int)">Formattable.formatTo()</a></code> method and modify the output format for <a href="../reference/java/util/Formattable.html">Formattables</a></a>.&nbsp;
               
     
 
@@ -20843,6 +21183,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/icu/number/FormattedNumberRange.html">FormattedNumberRange</a></td>
             <td class="jd-descrcol" width="100%">
               The result of a number range formatting operation.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/icu/text/FormattedValue.html">FormattedValue</a></td>
+            <td class="jd-descrcol" width="100%">
+              An abstract formatted value: a string with associated field attributes.&nbsp;
               
     
 
@@ -20923,8 +21274,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-descrcol" width="100%">
               <em>
       This class is deprecated.
-    Use the <a href="../tools/extras/support-library.html">Support Library</a>
-      <code><a href="https://developer.android.com/reference/android/support/v4/app/Fragment.html">Fragment</a></code> for consistent behavior across all devices
+    Use the <a href="../jetpack">Jetpack Fragment Library</a>
+      <code><a href="https://developer.android.com/reference/androidx/fragment/app/Fragment.html">Fragment</a></code> for consistent behavior across all devices
       and access to <a href="../topic/libraries/architecture/lifecycle.html">Lifecycle</a>.</em>&nbsp;
               
     
@@ -20938,7 +21289,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-descrcol" width="100%">
               <em>
       This class is deprecated.
-    Use <code><a href="https://developer.android.com/reference/android/support/v4/app/Fragment.InstantiationException.html">Fragment.InstantiationException</a></code></em>&nbsp;
+    Use <code><a href="https://developer.android.com/reference/androidx/fragment/app/Fragment.InstantiationException.html">Fragment.InstantiationException</a></code></em>&nbsp;
               
     
 
@@ -20951,7 +21302,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-descrcol" width="100%">
               <em>
       This class is deprecated.
-    Use <code><a href="https://developer.android.com/reference/android/support/v4/app/Fragment.SavedState.html">Fragment.SavedState</a></code></em>&nbsp;
+    Use <code><a href="https://developer.android.com/reference/androidx/fragment/app/Fragment.SavedState.html">Fragment.SavedState</a></code></em>&nbsp;
               
     
 
@@ -21667,7 +22018,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/service/quickaccesswallet/GetWalletCardsRequest.html">GetWalletCardsRequest</a></td>
             <td class="jd-descrcol" width="100%">
-              Represents a request to a <code><a href="../reference/android/service/quickaccesswallet/QuickAccessWalletService.html">QuickAccessWalletService</a></code> for <code><a href="../reference/android/service/quickaccesswallet/WalletCard.html">WalletCard</a></code>.&nbsp;
+              Represents a request to a <code><a href="../reference/android/service/quickaccesswallet/QuickAccessWalletService.html">QuickAccessWalletService</a></code> for <code><a href="../reference/android/service/quickaccesswallet/WalletCard.html">walletCards</a></code>.&nbsp;
               
     
 
@@ -22401,7 +22752,9 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/telephony/gsm/GsmCellLocation.html">GsmCellLocation</a></td>
             <td class="jd-descrcol" width="100%">
-              Represents the cell location on a GSM phone.&nbsp;
+              <em>
+      This class is deprecated.
+    use <code><a href="../reference/android/telephony/CellIdentity.html">CellIdentity</a></code>.</em>&nbsp;
               
     
 
@@ -23199,6 +23552,333 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeDerAsn1DnIdentification.html">IkeDerAsn1DnIdentification</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class represents an IKE entity ID based on a DER encoded ASN.1 X.500 Distinguished Name.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/IkeException.html">IkeException</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeException represents a generic exception that includes internal and protocol exceptions.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeFqdnIdentification.html">IkeFqdnIdentification</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeFqdnIdentification represents an IKE entity identification based on a fully-qualified domain
+ name (FQDN).&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeIdentification.html">IkeIdentification</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeIdentification is abstract base class that represents the common information for all types of
+ IKE entity identification.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/IkeInternalException.html">IkeInternalException</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeInternalException encapsulates all local implementation or resource related exceptions.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeIpv4AddrIdentification.html">IkeIpv4AddrIdentification</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeIpv4AddrIdentification represents an IKE entity identification based on IPv4 address.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeIpv6AddrIdentification.html">IkeIpv6AddrIdentification</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeIpv6AddrIdentification represents an IKE entity identification based on IPv6 address.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeKeyIdIdentification.html">IkeKeyIdIdentification</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeKeyIdIdentification represents an IKE entity identification based on a Key ID.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/IkeNetworkLostException.html">IkeNetworkLostException</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeNetworkLostException is returned to the caller via <code><a href="../reference/android/net/ipsec/ike/IkeSessionCallback.html#onError(android.net.ipsec.ike.exceptions.IkeException)">IkeSessionCallback.onError(android.net.ipsec.ike.exceptions.IkeException)</a></code> if the underlying Network for the <code><a href="../reference/android/net/ipsec/ike/IkeSession.html">IkeSession</a></code> was lost with no alternatives.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/IkeNonProtocolException.html">IkeNonProtocolException</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeNonProtocolException encapsulates all implementation-specific non-protocol IKE errors.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/IkeProtocolException.html">IkeProtocolException</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeProtocolException is an abstract class that represents the common information for all IKE
+ protocol errors.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeRfc822AddrIdentification.html">IkeRfc822AddrIdentification</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeRfc822AddrIdentification represents an IKE entity identification based on a fully-qualified
+ RFC 822 email address ID (e.g.&nbsp;ike@android.com).&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSaProposal.html">IkeSaProposal</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeSaProposal represents a proposed configuration to negotiate an IKE SA.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSaProposal.Builder.html">IkeSaProposal.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class is used to incrementally construct a IkeSaProposal.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSession.html">IkeSession</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class represents an IKE Session management object that allows for keying and management of
+ <code><a href="../reference/android/net/IpSecTransform.html">IpSecTransform</a></code>s.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionCallback.html">IkeSessionCallback</a></td>
+            <td class="jd-descrcol" width="100%">
+              Callback interface for receiving state changes of an <code><a href="../reference/android/net/ipsec/ike/IkeSession.html">IkeSession</a></code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionConfiguration.html">IkeSessionConfiguration</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeSessionConfiguration represents the negotiated configuration for a <code><a href="../reference/android/net/ipsec/ike/IkeSession.html">IkeSession</a></code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionConnectionInfo.html">IkeSessionConnectionInfo</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeSessionConnectionInfo represents the connection information of an <code><a href="../reference/android/net/ipsec/ike/IkeSession.html">IkeSession</a></code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionParams.html">IkeSessionParams</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeSessionParams contains all user provided configurations for negotiating an <code><a href="../reference/android/net/ipsec/ike/IkeSession.html">IkeSession</a></code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionParams.Builder.html">IkeSessionParams.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class can be used to incrementally construct a <code><a href="../reference/android/net/ipsec/ike/IkeSessionParams.html">IkeSessionParams</a></code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionParams.ConfigRequestIpv4PcscfServer.html">IkeSessionParams.ConfigRequestIpv4PcscfServer</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents an IPv4 P_CSCF request&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionParams.ConfigRequestIpv6PcscfServer.html">IkeSessionParams.ConfigRequestIpv6PcscfServer</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents an IPv6 P_CSCF request&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig.html">IkeSessionParams.IkeAuthConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class contains common information of an IKEv2 authentication configuration.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignLocalConfig.html">IkeSessionParams.IkeAuthDigitalSignLocalConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class represents the configuration to support IKEv2 public-key-signature-based
+ authentication of the local side.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignRemoteConfig.html">IkeSessionParams.IkeAuthDigitalSignRemoteConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class represents the configuration to support IKEv2 public-key-signature-based
+ authentication of the remote side.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthEapConfig.html">IkeSessionParams.IkeAuthEapConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class represents the configuration to support EAP authentication of the local side.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthPskConfig.html">IkeSessionParams.IkeAuthPskConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class represents the configuration to support IKEv2 pre-shared-key-based authentication
+ of local or remote side.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeSessionParams.IkeConfigRequest.html">IkeSessionParams.IkeConfigRequest</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents an IKE session configuration request type&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/IkeTrafficSelector.html">IkeTrafficSelector</a></td>
+            <td class="jd-descrcol" width="100%">
+              IkeTrafficSelector represents a Traffic Selector of a Child Session.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/Ikev2VpnProfile.html">Ikev2VpnProfile</a></td>
             <td class="jd-descrcol" width="100%">
               The Ikev2VpnProfile is a configuration for the platform setup of IKEv2/IPsec VPNs.&nbsp;
@@ -23627,7 +24307,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/service/autofill/ImageTransformation.html">ImageTransformation</a></td>
             <td class="jd-descrcol" width="100%">
               Replaces the content of a child <code><a href="../reference/android/widget/ImageView.html">ImageView</a></code> of a
- <code><a href="../reference/android/widget/RemoteViews.html">RemoteViews</a></code> with the first image that matches a regular expression
+ <code><a href="../reference/android/widget/RemoteViews.html">presentation template</a></code> with the first image that matches a regular expression
  (regex).&nbsp;
               
     
@@ -23770,6 +24450,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/telephony/ims/ImsReasonInfo.html">ImsReasonInfo</a></td>
             <td class="jd-descrcol" width="100%">
               Provides details on why an IMS call failed.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/ims/ImsRegistrationAttributes.html">ImsRegistrationAttributes</a></td>
+            <td class="jd-descrcol" width="100%">
+              Contains the attributes associated with the current IMS registration.&nbsp;
               
     
 
@@ -24677,9 +25368,9 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
               <em>
       This class is deprecated.
     Use
- <a href="../reference/android/support/test/InstrumentationRegistry.html">
+ <a href="../reference/androidx/test/platform/app/InstrumentationRegistry.html">
  InstrumentationRegistry</a> instead. New tests should be written using the
- <a href="../tools/testing-support-library/index.html">Android Testing Support Library</a>.</em>&nbsp;
+ <a href="../training/testing/index.html">AndroidX Test Library</a>.</em>&nbsp;
               
     
 
@@ -24976,6 +25667,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/InternalAddressFailureException.html">InternalAddressFailureException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown if the remote server hits an error in assigning an internal IP address.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/java/lang/InternalError.html">InternalError</a></td>
             <td class="jd-descrcol" width="100%">
               Thrown to indicate some unexpected internal error has occurred in
@@ -25230,6 +25932,28 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/InvalidIkeSpiException.html">InvalidIkeSpiException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown if an IKE message was received with an unrecognized destination SPI.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/InvalidKeException.html">InvalidKeException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown when the remote server expected a different Diffie-Hellman group.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/java/security/InvalidKeyException.html">InvalidKeyException</a></td>
             <td class="jd-descrcol" width="100%">
               This is the exception for invalid Keys (invalid encoding, wrong
@@ -25253,10 +25977,32 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/InvalidMajorVersionException.html">InvalidMajorVersionException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown when major version of an inbound message is higher than 2.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/java/nio/InvalidMarkException.html">InvalidMarkException</a></td>
             <td class="jd-descrcol" width="100%">
               Unchecked exception thrown when an attempt is made to reset a buffer
  when its mark is not defined.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/InvalidMessageIdException.html">InvalidMessageIdException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown when the remote server received a message with out-of-window-size ID.&nbsp;
               
     
 
@@ -25358,6 +26104,28 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-descrcol" width="100%">
               Thrown if message with the request doesn't satisfy the requirements documented in
  <code><a href="../reference/android/security/identity/IdentityCredential.html#getEntries(byte[],%20java.util.Map<java.lang.String,%20java.util.Collection<java.lang.String>>,%20byte[],%20byte[])">IdentityCredential#getEntries(byte[], Map, byte[], byte[])</a></code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/InvalidSelectorsException.html">InvalidSelectorsException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown if the remote server received an IPsec packet with mismatched selectors.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/InvalidSyntaxException.html">InvalidSyntaxException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown if any IKE message has a syntax error.&nbsp;
               
     
 
@@ -25868,7 +26636,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/app/job/JobWorkItem.html">JobWorkItem</a></td>
             <td class="jd-descrcol" width="100%">
               A unit of work that can be enqueued for a job using
- <code><a href="../reference/android/app/job/JobScheduler.html#enqueue(android.app.job.JobInfo,%20android.app.job.JobWorkItem)">JobScheduler#enqueue</a></code>.&nbsp;
+ <code><a href="../reference/android/app/job/JobScheduler.html#enqueue(android.app.job.JobInfo,%20android.app.job.JobWorkItem)">JobScheduler.enqueue</a></code>.&nbsp;
               
     
 
@@ -26145,7 +26913,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/security/KeyChainAliasCallback.html">KeyChainAliasCallback</a></td>
             <td class="jd-descrcol" width="100%">
-              The KeyChainAliasCallback is the callback for <code><a href="../reference/android/security/KeyChain.html#choosePrivateKeyAlias(android.app.Activity,%20android.security.KeyChainAliasCallback,%20java.lang.String[],%20java.security.Principal[],%20android.net.Uri,%20java.lang.String)">KeyChain#choosePrivateKeyAlias</a></code>.&nbsp;
+              The KeyChainAliasCallback is the callback for <code><a href="../reference/android/security/KeyChain.html#choosePrivateKeyAlias(android.app.Activity,%20android.security.KeyChainAliasCallback,%20java.lang.String[],%20java.security.Principal[],%20android.net.Uri,%20java.lang.String)">KeyChain.choosePrivateKeyAlias(Activity, KeyChainAliasCallback, String[], Principal[], Uri, String)</a></code>.&nbsp;
               
     
 
@@ -26965,6 +27733,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/test/LaunchPerformanceBase.html">LaunchPerformanceBase</a></td>
+            <td class="jd-descrcol" width="100%">
+              Base class for all launch performance Instrumentation classes.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/graphics/drawable/LayerDrawable.html">LayerDrawable</a></td>
             <td class="jd-descrcol" width="100%">
               A Drawable that manages an array of other Drawables.&nbsp;
@@ -27358,7 +28137,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/graphics/text/LineBreaker.Result.html">LineBreaker.Result</a></td>
             <td class="jd-descrcol" width="100%">
-              Holds the result of the <code><a href="../reference/android/graphics/text/LineBreaker.html#computeLineBreaks(android.graphics.text.MeasuredText,%20android.graphics.text.LineBreaker.ParagraphConstraints,%20int)">LineBreaker#computeLineBreaks</a></code>.&nbsp;
+              Holds the result of the <code><a href="../reference/android/graphics/text/LineBreaker.html#computeLineBreaks(android.graphics.text.MeasuredText,%20android.graphics.text.LineBreaker.ParagraphConstraints,%20int)">line breaking algorithm</a></code>.&nbsp;
               
     
 
@@ -27455,7 +28234,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/concurrent/LinkedBlockingDeque.html">LinkedBlockingDeque</a>&lt;E&gt;</td>
             <td class="jd-descrcol" width="100%">
-              An optionally-bounded <a href="../reference/java/util/concurrent/BlockingDeque.html">BlockingDeque</a></a> based on
+              An optionally-bounded <a href="../reference/java/util/concurrent/BlockingDeque.html">blocking deque</a></a> based on
  linked nodes.&nbsp;
               
     
@@ -27467,7 +28246,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/concurrent/LinkedBlockingQueue.html">LinkedBlockingQueue</a>&lt;E&gt;</td>
             <td class="jd-descrcol" width="100%">
-              An optionally-bounded <a href="../reference/java/util/concurrent/BlockingQueue.html">BlockingQueue</a></a> based on
+              An optionally-bounded <a href="../reference/java/util/concurrent/BlockingQueue.html">blocking queue</a></a> based on
  linked nodes.&nbsp;
               
     
@@ -29095,8 +29874,9 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/math/MathContext.html">MathContext</a></td>
             <td class="jd-descrcol" width="100%">
-              Immutable objects describing settings such as rounding mode and digit
- precision for the numerical operations provided by class <code><a href="../reference/java/math/BigDecimal.html">BigDecimal</a></code>.&nbsp;
+              Immutable objects which encapsulate the context settings which
+ describe certain rules for numerical operators, such as those
+ implemented by the <code><a href="../reference/java/math/BigDecimal.html">BigDecimal</a></code> class.&nbsp;
               
     
 
@@ -29773,6 +30553,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/media/MediaCodec.ParameterDescriptor.html">MediaCodec.ParameterDescriptor</a></td>
+            <td class="jd-descrcol" width="100%">
+              Contains description of a parameter.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/media/MediaCodec.QueueRequest.html">MediaCodec.QueueRequest</a></td>
             <td class="jd-descrcol" width="100%">
               Builder-like class for queue requests.&nbsp;
@@ -30435,7 +31226,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/media/MediaParser.SeekMap.html">MediaParser.SeekMap</a></td>
             <td class="jd-descrcol" width="100%">
-              Maps seek positions to <code><a href="../reference/android/media/MediaParser.SeekPoint.html">SeekPoint</a></code> in the stream.&nbsp;
+              Maps seek positions to <code><a href="../reference/android/media/MediaParser.SeekPoint.html">SeekPoints</a></code> in the stream.&nbsp;
               
     
 
@@ -30876,7 +31667,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/media/MediaRoute2Info.Builder.html">MediaRoute2Info.Builder</a></td>
             <td class="jd-descrcol" width="100%">
-              Builder for <code><a href="../reference/android/media/MediaRoute2Info.html">MediaRoute2Info</a></code>.&nbsp;
+              Builder for <code><a href="../reference/android/media/MediaRoute2Info.html">media route info</a></code>.&nbsp;
               
     
 
@@ -30898,7 +31689,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/app/MediaRouteActionProvider.html">MediaRouteActionProvider</a></td>
             <td class="jd-descrcol" width="100%">
-              The media route action provider displays a <code><a href="../reference/android/app/MediaRouteButton.html">MediaRouteButton</a></code>
+              The media route action provider displays a <code><a href="../reference/android/app/MediaRouteButton.html">media route button</a></code>
  in the application's <code><a href="../reference/android/app/ActionBar.html">ActionBar</a></code> to allow the user to select routes and
  to control the currently selected route.&nbsp;
               
@@ -31227,7 +32018,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/media/session/MediaSessionManager.html">MediaSessionManager</a></td>
             <td class="jd-descrcol" width="100%">
-              Provides support for interacting with <code><a href="../reference/android/media/session/MediaSession.html">MediaSession</a></code>
+              Provides support for interacting with <code><a href="../reference/android/media/session/MediaSession.html">media sessions</a></code>
  that applications have published to express their ongoing media playback
  state.&nbsp;
               
@@ -33223,6 +34014,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/com/android/net/module/util/NetworkCapabilitiesUtils.html">NetworkCapabilitiesUtils</a></td>
+            <td class="jd-descrcol" width="100%">
+              Utilities to examine <code><a href="../reference/android/net/NetworkCapabilities.html">NetworkCapabilities</a></code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/java/nio/channels/NetworkChannel.html">NetworkChannel</a></td>
             <td class="jd-descrcol" width="100%">
               A channel to a network socket.&nbsp;
@@ -33248,6 +34050,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/app/admin/NetworkEvent.html">NetworkEvent</a></td>
             <td class="jd-descrcol" width="100%">
               An abstract class that represents a network event.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/com/android/net/module/util/NetworkIdentityUtils.html">NetworkIdentityUtils</a></td>
+            <td class="jd-descrcol" width="100%">
+              Utilities to examine <code><a href="../reference/android/net/NetworkIdentity.html">NetworkIdentity</a></code>.&nbsp;
               
     
 
@@ -33653,6 +34466,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/NoAdditionalSasException.html">NoAdditionalSasException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown if the remote server is unwilling to accept any more Child SAs.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/security/identity/NoAuthenticationKeyAvailableException.html">NoAuthenticationKeyAvailableException</a></td>
             <td class="jd-descrcol" width="100%">
               Thrown if no dynamic authentication keys are available.&nbsp;
@@ -33680,8 +34504,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/nio/channels/NoConnectionPendingException.html">NoConnectionPendingException</a></td>
             <td class="jd-descrcol" width="100%">
-              Unchecked exception thrown when the <code><a href="../reference/java/nio/channels/SocketChannel.html#finishConnect()">SocketChannel#finishConnect</a></code> method of a <code><a href="../reference/java/nio/channels/SocketChannel.html">SocketChannel</a></code> is invoked without first
- successfully invoking its <code><a href="../reference/java/nio/channels/SocketChannel.html#connect(java.net.SocketAddress)">SocketChannel#connect</a></code> method.&nbsp;
+              Unchecked exception thrown when the <code><a href="../reference/java/nio/channels/SocketChannel.html#finishConnect()">finishConnect</a></code> method of a <code><a href="../reference/java/nio/channels/SocketChannel.html">SocketChannel</a></code> is invoked without first
+ successfully invoking its <code><a href="../reference/java/nio/channels/SocketChannel.html#connect(java.net.SocketAddress)">connect</a></code> method.&nbsp;
               
     
 
@@ -34464,6 +35288,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/NoValidProposalChosenException.html">NoValidProposalChosenException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown if a SA proposal negotiation failed.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/nsd/NsdManager.html">NsdManager</a></td>
             <td class="jd-descrcol" width="100%">
               The Network Service Discovery Manager class provides the API to discover services
@@ -35152,7 +35987,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/hardware/camera2/params/OisSample.html">OisSample</a></td>
             <td class="jd-descrcol" width="100%">
               Immutable class to store an
- <code><a href="../reference/android/hardware/camera2/CaptureResult.html#STATISTICS_OIS_SAMPLES">CaptureResult#STATISTICS_OIS_SAMPLES</a></code>.&nbsp;
+ <code><a href="../reference/android/hardware/camera2/CaptureResult.html#STATISTICS_OIS_SAMPLES">optical image stabilization sample</a></code>.&nbsp;
               
     
 
@@ -35627,8 +36462,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/os/health/PackageHealthStats.html">PackageHealthStats</a></td>
             <td class="jd-descrcol" width="100%">
               Keys for <code><a href="../reference/android/os/health/HealthStats.html">HealthStats</a></code> returned from
- <code><a href="../reference/android/os/health/HealthStats.html#getStats(int)">HealthStats#getStats(int)</a></code> with the
- <code><a href="../reference/android/os/health/UidHealthStats.html#STATS_PACKAGES">UidHealthStats#STATS_PACKAGES</a></code> key.&nbsp;
+ <code><a href="../reference/android/os/health/HealthStats.html#getStats(int)">HealthStats.getStats(int)</a></code> with the
+ <code><a href="../reference/android/os/health/UidHealthStats.html#STATS_PACKAGES">UidHealthStats.STATS_PACKAGES</a></code> key.&nbsp;
               
     
 
@@ -36027,7 +36862,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/os/ParcelFileDescriptor.AutoCloseInputStream.html">ParcelFileDescriptor.AutoCloseInputStream</a></td>
             <td class="jd-descrcol" width="100%">
               An InputStream you can create on a ParcelFileDescriptor, which will
- take care of calling <code><a href="../reference/android/os/ParcelFileDescriptor.html#close()">ParcelFileDescriptor#close</a></code> for you when the stream is closed.&nbsp;
+ take care of calling <code><a href="../reference/android/os/ParcelFileDescriptor.html#close()">ParcelFileDescriptor.close()</a></code> for you when the stream is closed.&nbsp;
               
     
 
@@ -36039,7 +36874,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/os/ParcelFileDescriptor.AutoCloseOutputStream.html">ParcelFileDescriptor.AutoCloseOutputStream</a></td>
             <td class="jd-descrcol" width="100%">
               An OutputStream you can create on a ParcelFileDescriptor, which will
- take care of calling <code><a href="../reference/android/os/ParcelFileDescriptor.html#close()">ParcelFileDescriptor#close</a></code> for you when the stream is closed.&nbsp;
+ take care of calling <code><a href="../reference/android/os/ParcelFileDescriptor.html#close()">ParcelFileDescriptor.close()</a></code> for you when the stream is closed.&nbsp;
               
     
 
@@ -36903,6 +37738,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/PhoneCapability.html">PhoneCapability</a></td>
+            <td class="jd-descrcol" width="100%">
+              Define capability of a modem group.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/telephony/PhoneNumberFormattingTextWatcher.html">PhoneNumberFormattingTextWatcher</a></td>
             <td class="jd-descrcol" width="100%">
               Watches a <code><a href="../reference/android/widget/TextView.html">TextView</a></code> and if a phone number is entered
@@ -36928,9 +37774,20 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/telephony/PhoneStateListener.html">PhoneStateListener</a></td>
             <td class="jd-descrcol" width="100%">
-              A listener class for monitoring changes in specific telephony states
- on the device, including service state, signal strength, message
- waiting indicator (voicemail), and others.&nbsp;
+              <em>
+      This class is deprecated.
+    Use <code><a href="../reference/android/telephony/TelephonyCallback.html">TelephonyCallback</a></code> instead.</em>&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/PhysicalChannelConfig.html">PhysicalChannelConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              &nbsp;
               
     
 
@@ -36990,8 +37847,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/os/health/PidHealthStats.html">PidHealthStats</a></td>
             <td class="jd-descrcol" width="100%">
               Keys for <code><a href="../reference/android/os/health/HealthStats.html">HealthStats</a></code> returned from
- <code><a href="../reference/android/os/health/HealthStats.html#getStats(int)">HealthStats#getStats(int)</a></code> with the
- <code><a href="../reference/android/os/health/UidHealthStats.html#STATS_PIDS">UidHealthStats#STATS_PIDS</a></code> key.&nbsp;
+ <code><a href="../reference/android/os/health/HealthStats.html#getStats(int)">HealthStats.getStats(int)</a></code> with the
+ <code><a href="../reference/android/os/health/UidHealthStats.html#STATS_PIDS">UidHealthStats.STATS_PIDS</a></code> key.&nbsp;
               
     
 
@@ -37281,9 +38138,9 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/media/session/PlaybackState.CustomAction.html">PlaybackState.CustomAction</a></td>
             <td class="jd-descrcol" width="100%">
-              <code><a href="../reference/android/media/session/PlaybackState.CustomAction.html">PlaybackState.CustomAction</a></code> can be used to extend the capabilities of
+              <code><a href="../reference/android/media/session/PlaybackState.CustomAction.html">CustomActions</a></code> can be used to extend the capabilities of
  the standard transport controls by exposing app specific actions to
- <code><a href="../reference/android/media/session/MediaController.html">MediaController</a></code>.&nbsp;
+ <code><a href="../reference/android/media/session/MediaController.html">MediaControllers</a></code>.&nbsp;
               
     
 
@@ -37525,7 +38382,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-descrcol" width="100%">
               <p>This class contains the list of alpha compositing and blending modes
  that can be passed to <code><a href="../reference/android/graphics/PorterDuffXfermode.html">PorterDuffXfermode</a></code>, a specialized implementation
- of <code><a href="../reference/android/graphics/Paint.html">Paint</a></code>'s <code><a href="../reference/android/graphics/Paint.html#setXfermode(android.graphics.Xfermode)">Paint#setXfermode(Xfermode)</a></code>.&nbsp;
+ of <code><a href="../reference/android/graphics/Paint.html">Paint</a></code>'s <code><a href="../reference/android/graphics/Paint.html#setXfermode(android.graphics.Xfermode)">transfer mode</a></code>.&nbsp;
               
     
 
@@ -37551,7 +38408,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/graphics/PorterDuffColorFilter.html">PorterDuffColorFilter</a></td>
             <td class="jd-descrcol" width="100%">
               A color filter that can be used to tint the source pixels using a single
- color and a specific <code><a href="../reference/android/graphics/PorterDuff.html">PorterDuff</a></code>.&nbsp;
+ color and a specific <code><a href="../reference/android/graphics/PorterDuff.html">Porter-Duff composite mode</a></code>.&nbsp;
               
     
 
@@ -37563,7 +38420,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/graphics/PorterDuffXfermode.html">PorterDuffXfermode</a></td>
             <td class="jd-descrcol" width="100%">
               <p>Specialized implementation of <code><a href="../reference/android/graphics/Paint.html">Paint</a></code>'s
- <code><a href="../reference/android/graphics/Paint.html#setXfermode(android.graphics.Xfermode)">Paint#setXfermode(Xfermode)</a></code>.&nbsp;
+ <code><a href="../reference/android/graphics/Paint.html#setXfermode(android.graphics.Xfermode)">transfer mode</a></code>.&nbsp;
               
     
 
@@ -37612,7 +38469,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/nio/file/attribute/PosixFilePermission.html">PosixFilePermission</a></td>
             <td class="jd-descrcol" width="100%">
-              Defines the bits for use with the <code><a href="../reference/java/nio/file/attribute/PosixFileAttributes.html#permissions()">PosixFileAttributes#permissions()</a></code> attribute.&nbsp;
+              Defines the bits for use with the <code><a href="../reference/java/nio/file/attribute/PosixFileAttributes.html#permissions()">permissions</a></code> attribute.&nbsp;
               
     
 
@@ -38277,8 +39134,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/print/PrintDocumentAdapter.LayoutResultCallback.html">PrintDocumentAdapter.LayoutResultCallback</a></td>
             <td class="jd-descrcol" width="100%">
-              Base class for implementing a callback for the result of <code><a href="../reference/android/print/PrintDocumentAdapter.html#onLayout(android.print.PrintAttributes,%20android.print.PrintAttributes,%20android.os.CancellationSignal,%20android.print.PrintDocumentAdapter.LayoutResultCallback,%20android.os.Bundle)">PrintDocumentAdapter#onLayout(PrintAttributes, PrintAttributes,
- CancellationSignal, LayoutResultCallback, Bundle)</a></code>.&nbsp;
+              Base class for implementing a callback for the result of <code><a href="../reference/android/print/PrintDocumentAdapter.html#onLayout(android.print.PrintAttributes,%20android.print.PrintAttributes,%20android.os.CancellationSignal,%20android.print.PrintDocumentAdapter.LayoutResultCallback,%20android.os.Bundle)">PrintDocumentAdapter.onLayout(android.print.PrintAttributes, android.print.PrintAttributes, android.os.CancellationSignal, android.print.PrintDocumentAdapter.LayoutResultCallback, android.os.Bundle)</a></code>.&nbsp;
               
     
 
@@ -38289,8 +39145,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/print/PrintDocumentAdapter.WriteResultCallback.html">PrintDocumentAdapter.WriteResultCallback</a></td>
             <td class="jd-descrcol" width="100%">
-              Base class for implementing a callback for the result of <code><a href="../reference/android/print/PrintDocumentAdapter.html#onWrite(android.print.PageRange[],%20android.os.ParcelFileDescriptor,%20android.os.CancellationSignal,%20android.print.PrintDocumentAdapter.WriteResultCallback)">PrintDocumentAdapter#onWrite(PageRange[], ParcelFileDescriptor, CancellationSignal,
- WriteResultCallback)</a></code>.&nbsp;
+              Base class for implementing a callback for the result of <code><a href="../reference/android/print/PrintDocumentAdapter.html#onWrite(android.print.PageRange[],%20android.os.ParcelFileDescriptor,%20android.os.CancellationSignal,%20android.print.PrintDocumentAdapter.WriteResultCallback)">PrintDocumentAdapter.onWrite(android.print.PageRange[], android.os.ParcelFileDescriptor, android.os.CancellationSignal, android.print.PrintDocumentAdapter.WriteResultCallback)</a></code>.&nbsp;
               
     
 
@@ -38542,7 +39397,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/concurrent/PriorityBlockingQueue.html">PriorityBlockingQueue</a>&lt;E&gt;</td>
             <td class="jd-descrcol" width="100%">
-              An unbounded <a href="../reference/java/util/concurrent/BlockingQueue.html">BlockingQueue</a></a> that uses
+              An unbounded <a href="../reference/java/util/concurrent/BlockingQueue.html">blocking queue</a></a> that uses
  the same ordering rules as class <code><a href="../reference/java/util/PriorityQueue.html">PriorityQueue</a></code> and supplies
  blocking retrieval operations.&nbsp;
               
@@ -38555,7 +39410,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/PriorityQueue.html">PriorityQueue</a>&lt;E&gt;</td>
             <td class="jd-descrcol" width="100%">
-              An unbounded priority <a href="../reference/java/util/Queue.html">Queue</a></a> based on a priority heap.&nbsp;
+              An unbounded priority <a href="../reference/java/util/Queue.html">queue</a></a> based on a priority heap.&nbsp;
               
     
 
@@ -38644,7 +39499,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/java/lang/Process.html">Process</a></td>
             <td class="jd-descrcol" width="100%">
               The <code><a href="../reference/java/lang/ProcessBuilder.html#start()">ProcessBuilder#start()</a></code> and
- <code><a href="../reference/java/lang/Runtime.html#exec(java.lang.String[],%20java.lang.String[],%20java.io.File)">Runtime#exec(String[],String[],File)</a></code>
+ <code><a href="../reference/java/lang/Runtime.html#exec(java.lang.String[],%20java.lang.String[],%20java.io.File)">Runtime.exec</a></code>
  methods create a native process and return an instance of a
  subclass of <code>Process</code> that can be used to control the process
  and obtain information about it.&nbsp;
@@ -38706,8 +39561,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/os/health/ProcessHealthStats.html">ProcessHealthStats</a></td>
             <td class="jd-descrcol" width="100%">
               Keys for <code><a href="../reference/android/os/health/HealthStats.html">HealthStats</a></code> returned from
- <code><a href="../reference/android/os/health/HealthStats.html#getStats(int)">HealthStats#getStats(int)</a></code> with the
- <code><a href="../reference/android/os/health/UidHealthStats.html#STATS_PROCESSES">UidHealthStats#STATS_PROCESSES</a></code> key.&nbsp;
+ <code><a href="../reference/android/os/health/HealthStats.html#getStats(int)">HealthStats.getStats(int)</a></code> with the
+ <code><a href="../reference/android/os/health/UidHealthStats.html#STATS_PROCESSES">UidHealthStats.STATS_PROCESSES</a></code> key.&nbsp;
               
     
 
@@ -39957,7 +40812,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/java/nio/file/ReadOnlyFileSystemException.html">ReadOnlyFileSystemException</a></td>
             <td class="jd-descrcol" width="100%">
               Unchecked exception thrown when an attempt is made to update an object
- associated with a <code><a href="../reference/java/nio/file/FileSystem.html#isReadOnly()">FileSystem#isReadOnly()</a></code> <code>FileSystem</code>.&nbsp;
+ associated with a <code><a href="../reference/java/nio/file/FileSystem.html#isReadOnly()">read-only</a></code> <code>FileSystem</code>.&nbsp;
               
     
 
@@ -39980,7 +40835,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/concurrent/locks/ReadWriteLock.html">ReadWriteLock</a></td>
             <td class="jd-descrcol" width="100%">
-              A <code>ReadWriteLock</code> maintains a pair of associated <code><a href="../reference/java/util/concurrent/locks/Lock.html">Lock</a></code>, one for read-only operations and one for writing.&nbsp;
+              A <code>ReadWriteLock</code> maintains a pair of associated <code><a href="../reference/java/util/concurrent/locks/Lock.html">locks</a></code>, one for read-only operations and one for writing.&nbsp;
               
     
 
@@ -40408,6 +41263,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-descrcol" width="100%">
               Represents a direction for an absolute unit e.g "Next Tuesday"
  or "Last Tuesday"&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.html">RelativeDateTimeFormatter.FormattedRelativeDateTime</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents the result of a formatting operation of a relative datetime.&nbsp;
               
     
 
@@ -40984,8 +41850,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/java/util/ResourceBundle.Control.html">ResourceBundle.Control</a></td>
             <td class="jd-descrcol" width="100%">
               <code>ResourceBundle.Control</code> defines a set of callback methods
- that are invoked by the <code><a href="../reference/java/util/ResourceBundle.html#getBundle(java.lang.String,%20java.util.Locale,%20java.lang.ClassLoader,%20java.util.ResourceBundle.Control)">ResourceBundle#getBundle(String,
- Locale, ClassLoader, Control)</a></code> factory
+ that are invoked by the <code><a href="../reference/java/util/ResourceBundle.html#getBundle(java.lang.String,%20java.util.Locale,%20java.lang.ClassLoader,%20java.util.ResourceBundle.Control)">ResourceBundle.getBundle</a></code> factory
  methods during the bundle loading process.&nbsp;
               
     
@@ -41077,7 +41942,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/content/res/loader/ResourcesLoader.html">ResourcesLoader</a></td>
             <td class="jd-descrcol" width="100%">
-              A container for supplying <code><a href="../reference/android/content/res/loader/ResourcesProvider.html">ResourcesProvider</a></code> to <code><a href="../reference/android/content/res/Resources.html">Resources</a></code>
+              A container for supplying <code><a href="../reference/android/content/res/loader/ResourcesProvider.html">ResourcesProvider(s)</a></code> to <code><a href="../reference/android/content/res/Resources.html">Resources</a></code>
  objects.&nbsp;
               
     
@@ -41386,8 +42251,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/math/RoundingMode.html">RoundingMode</a></td>
             <td class="jd-descrcol" width="100%">
-              Specifies the rounding behavior for operations whose results cannot be
- represented exactly.&nbsp;
+              Specifies a <i>rounding behavior</i> for numerical operations
+ capable of discarding precision.&nbsp;
               
     
 
@@ -41752,8 +42617,10 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/rtp/RtpStream.html">RtpStream</a></td>
             <td class="jd-descrcol" width="100%">
-              RtpStream represents the base class of streams which send and receive network
- packets with media payloads over Real-time Transport Protocol (RTP).&nbsp;
+              <em>
+      This class is deprecated.
+    <code><a href="../reference/android/net/sip/SipManager.html">SipManager</a></code> and associated classes are no longer supported and
+ should not be used as the basis of future VOIP apps.</em>&nbsp;
               
     
 
@@ -41934,6 +42801,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/SaProposal.html">SaProposal</a></td>
+            <td class="jd-descrcol" width="100%">
+              SaProposal represents a proposed configuration to negotiate an IKE or Child SA.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/service/autofill/SaveCallback.html">SaveCallback</a></td>
             <td class="jd-descrcol" width="100%">
               Handles save requests from the <code><a href="../reference/android/service/autofill/AutofillService.html">AutofillService</a></code> into the <code><a href="../reference/android/app/Activity.html">Activity</a></code> being
@@ -41986,7 +42864,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/service/autofill/SaveRequest.html">SaveRequest</a></td>
             <td class="jd-descrcol" width="100%">
-              This class represents a request to an <code><a href="../reference/android/service/autofill/AutofillService.html">AutofillService</a></code> to save applicable data entered by the user.&nbsp;
+              This class represents a request to an <code><a href="../reference/android/service/autofill/AutofillService.html">autofill provider</a></code> to save applicable data entered by the user.&nbsp;
               
     
 
@@ -43223,7 +44101,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/service/quickaccesswallet/SelectWalletCardRequest.html">SelectWalletCardRequest</a></td>
             <td class="jd-descrcol" width="100%">
-              Represents a request to a <code><a href="../reference/android/service/quickaccesswallet/QuickAccessWalletService.html">QuickAccessWalletService</a></code> to select a particular <code><a href="../reference/android/service/quickaccesswallet/WalletCard.html">WalletCard</a></code>.&nbsp;
+              Represents a request to a <code><a href="../reference/android/service/quickaccesswallet/QuickAccessWalletService.html">QuickAccessWalletService</a></code> to select a particular <code><a href="../reference/android/service/quickaccesswallet/WalletCard.html">walletCard</a></code>.&nbsp;
               
     
 
@@ -43281,7 +44159,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-descrcol" width="100%">
               This class represents a <code><a href="../reference/android/hardware/Sensor.html">Sensor</a></code> event and
  holds information such as the sensor's type, the time-stamp, accuracy and of
- course the sensor's <code><a href="../reference/android/hardware/SensorEvent.html#values">SensorEvent#values</a></code>.&nbsp;
+ course the sensor's <code><a href="../reference/android/hardware/SensorEvent.html#values">data</a></code>.&nbsp;
               
     
 
@@ -43492,8 +44370,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/os/health/ServiceHealthStats.html">ServiceHealthStats</a></td>
             <td class="jd-descrcol" width="100%">
               Keys for <code><a href="../reference/android/os/health/HealthStats.html">HealthStats</a></code> returned from
- <code><a href="../reference/android/os/health/HealthStats.html#getStats(int)">HealthStats#getStats(int)</a></code> with the
- <code><a href="../reference/android/os/health/PackageHealthStats.html#STATS_SERVICES">PackageHealthStats#STATS_SERVICES</a></code> key.&nbsp;
+ <code><a href="../reference/android/os/health/HealthStats.html#getStats(int)">HealthStats.getStats(int)</a></code> with the
+ <code><a href="../reference/android/os/health/PackageHealthStats.html#STATS_SERVICES">PackageHealthStats.STATS_SERVICES</a></code> key.&nbsp;
               
     
 
@@ -43940,7 +44818,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/app/SharedElementCallback.OnSharedElementsReadyListener.html">SharedElementCallback.OnSharedElementsReadyListener</a></td>
             <td class="jd-descrcol" width="100%">
-              Listener to be called after <code><a href="../reference/android/app/SharedElementCallback.html#onSharedElementsArrived(java.util.List<java.lang.String>,%20java.util.List<android.view.View>,%20android.app.SharedElementCallback.OnSharedElementsReadyListener)">SharedElementCallback#onSharedElementsArrived(List, List, OnSharedElementsReadyListener)</a></code>
+              Listener to be called after <code><a href="../reference/android/app/SharedElementCallback.html#onSharedElementsArrived(java.util.List<java.lang.String>,%20java.util.List<android.view.View>,%20android.app.SharedElementCallback.OnSharedElementsReadyListener)">SharedElementCallback.onSharedElementsArrived(java.util.List, java.util.List, android.app.SharedElementCallback.OnSharedElementsReadyListener)</a></code>
  when the shared elements are ready to be hidden in the source Activity and shown in the
  destination Activity.&nbsp;
               
@@ -43975,7 +44853,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/content/SharedPreferences.html">SharedPreferences</a></td>
             <td class="jd-descrcol" width="100%">
-              Interface for accessing and modifying preference data returned by <code><a href="../reference/android/content/Context.html#getSharedPreferences(java.lang.String,%20int)">Context#getSharedPreferences</a></code>.&nbsp;
+              Interface for accessing and modifying preference data returned by <code><a href="../reference/android/content/Context.html#getSharedPreferences(java.lang.String,%20int)">Context.getSharedPreferences(String, int)</a></code>.&nbsp;
               
     
 
@@ -44158,6 +45036,51 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/SignalStrengthUpdateRequest.html">SignalStrengthUpdateRequest</a></td>
+            <td class="jd-descrcol" width="100%">
+              Request used to register <code><a href="../reference/android/telephony/SignalThresholdInfo.html">SignalThresholdInfo</a></code> to be notified when the signal strength
+ breach the specified thresholds.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/SignalStrengthUpdateRequest.Builder.html">SignalStrengthUpdateRequest.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              Builder class to create <code><a href="../reference/android/telephony/SignalStrengthUpdateRequest.html">SignalStrengthUpdateRequest</a></code> object.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/SignalThresholdInfo.html">SignalThresholdInfo</a></td>
+            <td class="jd-descrcol" width="100%">
+              Defines the threshold value of the signal strength.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/SignalThresholdInfo.Builder.html">SignalThresholdInfo.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              Builder class to create <code><a href="../reference/android/telephony/SignalThresholdInfo.html">SignalThresholdInfo</a></code> objects.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/content/pm/Signature.html">Signature</a></td>
             <td class="jd-descrcol" width="100%">
               Opaque, immutable representation of a signing certificate associated with an
@@ -44249,6 +45172,39 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/java/time/format/SignStyle.html">SignStyle</a></td>
             <td class="jd-descrcol" width="100%">
               Enumeration of ways to handle the positive/negative sign.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/provider/SimPhonebookContract.html">SimPhonebookContract</a></td>
+            <td class="jd-descrcol" width="100%">
+              The contract between the provider of contact records on the device's SIM cards and applications.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/provider/SimPhonebookContract.ElementaryFiles.html">SimPhonebookContract.ElementaryFiles</a></td>
+            <td class="jd-descrcol" width="100%">
+              Constants for metadata about the elementary files of the SIM cards in the phone.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/provider/SimPhonebookContract.SimRecords.html">SimPhonebookContract.SimRecords</a></td>
+            <td class="jd-descrcol" width="100%">
+              Constants for the contact records on a SIM card.&nbsp;
               
     
 
@@ -44451,9 +45407,23 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/SinglePairRequiredException.html">SinglePairRequiredException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown if the remote server requires a single pair of addresses as selectors.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/sip/SipAudioCall.html">SipAudioCall</a></td>
             <td class="jd-descrcol" width="100%">
-              Handles an Internet audio call over SIP.&nbsp;
+              <em>
+      This class is deprecated.
+    <code><a href="../reference/android/net/sip/SipManager.html">SipManager</a></code> and associated classes are no longer supported and
+ should not be used as the basis of future VOIP apps.</em>&nbsp;
               
     
 
@@ -44476,7 +45446,10 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/sip/SipErrorCode.html">SipErrorCode</a></td>
             <td class="jd-descrcol" width="100%">
-              Defines error codes returned during SIP actions.&nbsp;
+              <em>
+      This class is deprecated.
+    <code><a href="../reference/android/net/sip/SipManager.html">SipManager</a></code> and associated classes are no longer supported and
+ should not be used as the basis of future VOIP apps.</em>&nbsp;
               
     
 
@@ -44487,7 +45460,10 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/sip/SipException.html">SipException</a></td>
             <td class="jd-descrcol" width="100%">
-              Indicates a general SIP-related exception.&nbsp;
+              <em>
+      This class is deprecated.
+    <code><a href="../reference/android/net/sip/SipManager.html">SipManager</a></code> and associated classes are no longer supported and
+ should not be used as the basis of future VOIP apps.</em>&nbsp;
               
     
 
@@ -44498,8 +45474,10 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/sip/SipManager.html">SipManager</a></td>
             <td class="jd-descrcol" width="100%">
-              Provides APIs for SIP tasks, such as initiating SIP connections, and provides access to related
- SIP services.&nbsp;
+              <em>
+      This class is deprecated.
+    <code><a href="../reference/android/net/sip/SipManager.html">SipManager</a></code> and associated classes are no longer supported and
+ should not be used as the basis of future VOIP apps.</em>&nbsp;
               
     
 
@@ -44510,7 +45488,10 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/sip/SipProfile.html">SipProfile</a></td>
             <td class="jd-descrcol" width="100%">
-              Defines a SIP profile, including a SIP account, domain and server information.&nbsp;
+              <em>
+      This class is deprecated.
+    <code><a href="../reference/android/net/sip/SipManager.html">SipManager</a></code> and associated classes are no longer supported and
+ should not be used as the basis of future VOIP apps.</em>&nbsp;
               
     
 
@@ -44532,7 +45513,10 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/sip/SipRegistrationListener.html">SipRegistrationListener</a></td>
             <td class="jd-descrcol" width="100%">
-              Listener for SIP registration events.&nbsp;
+              <em>
+      This interface is deprecated.
+    <code><a href="../reference/android/net/sip/SipManager.html">SipManager</a></code> and associated classes are no longer supported and
+ should not be used as the basis of future VOIP apps.</em>&nbsp;
               
     
 
@@ -44543,8 +45527,10 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/sip/SipSession.html">SipSession</a></td>
             <td class="jd-descrcol" width="100%">
-              Represents a SIP session that is associated with a SIP dialog or a standalone
- transaction not within a dialog.&nbsp;
+              <em>
+      This class is deprecated.
+    <code><a href="../reference/android/net/sip/SipManager.html">SipManager</a></code> and associated classes are no longer supported and
+ should not be used as the basis of future VOIP apps.</em>&nbsp;
               
     
 
@@ -44899,7 +45885,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/javax/net/ssl/SNIHostName.html">SNIHostName</a></td>
             <td class="jd-descrcol" width="100%">
               Instances of this class represent a server name of type
- <code><a href="../reference/javax/net/ssl/StandardConstants.html#SNI_HOST_NAME">StandardConstants#SNI_HOST_NAME</a></code> in a Server Name
+ <code><a href="../reference/javax/net/ssl/StandardConstants.html#SNI_HOST_NAME">host_name</a></code> in a Server Name
  Indication (SNI) extension.&nbsp;
               
     
@@ -45244,7 +46230,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/text/Spannable.Factory.html">Spannable.Factory</a></td>
             <td class="jd-descrcol" width="100%">
-              Factory used by TextView to create new <code><a href="../reference/android/text/Spannable.html">Spannable</a></code>.&nbsp;
+              Factory used by TextView to create new <code><a href="../reference/android/text/Spannable.html">Spannables</a></code>.&nbsp;
               
     
 
@@ -46311,7 +47297,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/ssl/SSLEngines.html">SSLEngines</a></td>
             <td class="jd-descrcol" width="100%">
-              &nbsp;
+              Static utility methods for accessing additional functionality of supported instances of
+ <code><a href="../reference/javax/net/ssl/SSLEngine.html">SSLEngine</a></code>.&nbsp;
               
     
 
@@ -46545,7 +47532,8 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/net/ssl/SSLSockets.html">SSLSockets</a></td>
             <td class="jd-descrcol" width="100%">
-              &nbsp;
+              Static utility methods for accessing additional functionality of supported instances of
+ <code><a href="../reference/javax/net/ssl/SSLSocket.html">SSLSocket</a></code>.&nbsp;
               
     
 
@@ -46580,7 +47568,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/lang/StackTraceElement.html">StackTraceElement</a></td>
             <td class="jd-descrcol" width="100%">
-              An element in a stack trace, as returned by <code><a href="../reference/java/lang/Throwable.html#getStackTrace()">Throwable#getStackTrace()</a></code>.&nbsp;
+              An element in a stack trace, as returned by <code><a href="../reference/java/lang/Throwable.html#getStackTrace()">Throwable.getStackTrace()</a></code>.&nbsp;
               
     
 
@@ -46626,7 +47614,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/nio/charset/StandardCharsets.html">StandardCharsets</a></td>
             <td class="jd-descrcol" width="100%">
-              Constant definitions for the standard <code><a href="../reference/java/nio/charset/Charset.html">Charset</a></code>.&nbsp;
+              Constant definitions for the standard <code><a href="../reference/java/nio/charset/Charset.html">Charsets</a></code>.&nbsp;
               
     
 
@@ -46966,7 +47954,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/hardware/camera2/params/StreamConfigurationMap.html">StreamConfigurationMap</a></td>
             <td class="jd-descrcol" width="100%">
               Immutable class to store the available stream
- <code><a href="../reference/android/hardware/camera2/CameraCharacteristics.html#SCALER_STREAM_CONFIGURATION_MAP">CameraCharacteristics#SCALER_STREAM_CONFIGURATION_MAP</a></code> to set up
+ <code><a href="../reference/android/hardware/camera2/CameraCharacteristics.html#SCALER_STREAM_CONFIGURATION_MAP">configurations</a></code> to set up
  <code><a href="../reference/android/view/Surface.html">Surfaces</a></code> for creating a
  <code><a href="../reference/android/hardware/camera2/CameraCaptureSession.html">capture session</a></code> with
  <code><a href="../reference/android/hardware/camera2/CameraDevice.html#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)">CameraDevice.createCaptureSession(SessionConfiguration)</a></code>.&nbsp;
@@ -47374,6 +48362,28 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-descrcol" width="100%">
               <p>The standard mapping in the Java programming language for an SQL
  structured type.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/system/StructCmsghdr.html">StructCmsghdr</a></td>
+            <td class="jd-descrcol" width="100%">
+              Corresponds to C's <code>struct cmsghdr</code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/system/StructMsghdr.html">StructMsghdr</a></td>
+            <td class="jd-descrcol" width="100%">
+              Corresponds to C's <code>struct msghdr</code>&nbsp;
               
     
 
@@ -47999,7 +49009,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/concurrent/SynchronousQueue.html">SynchronousQueue</a>&lt;E&gt;</td>
             <td class="jd-descrcol" width="100%">
-              A <a href="../reference/java/util/concurrent/BlockingQueue.html">BlockingQueue</a></a> in which each insert
+              A <a href="../reference/java/util/concurrent/BlockingQueue.html">blocking queue</a></a> in which each insert
  operation must wait for a corresponding remove operation by another
  thread, and vice versa.&nbsp;
               
@@ -48802,6 +49812,261 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.html">TelephonyCallback</a></td>
+            <td class="jd-descrcol" width="100%">
+              A callback class for monitoring changes in specific telephony states
+ on the device, including service state, signal strength, message
+ waiting indicator (voicemail), and others.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener.html">TelephonyCallback.ActiveDataSubscriptionIdListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for active data subscription ID listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.AlwaysReportedSignalStrengthListener.html">TelephonyCallback.AlwaysReportedSignalStrengthListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for network signal strengths callback which always reported from modem.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.BarringInfoListener.html">TelephonyCallback.BarringInfoListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for barring information listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.CallDisconnectCauseListener.html">TelephonyCallback.CallDisconnectCauseListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for call disconnect cause listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.CallForwardingIndicatorListener.html">TelephonyCallback.CallForwardingIndicatorListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for call-forwarding indicator listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.CallStateListener.html">TelephonyCallback.CallStateListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for call state listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.CarrierNetworkListener.html">TelephonyCallback.CarrierNetworkListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for carrier network listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.CellInfoListener.html">TelephonyCallback.CellInfoListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for cell info listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.CellLocationListener.html">TelephonyCallback.CellLocationListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for device cell location listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.DataActivationStateListener.html">TelephonyCallback.DataActivationStateListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for SIM data activation state listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.DataActivityListener.html">TelephonyCallback.DataActivityListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for data activity state listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.DataConnectionStateListener.html">TelephonyCallback.DataConnectionStateListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for data connection state listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.DisplayInfoListener.html">TelephonyCallback.DisplayInfoListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for display info listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.EmergencyNumberListListener.html">TelephonyCallback.EmergencyNumberListListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for the current emergency number list listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener.html">TelephonyCallback.ImsCallDisconnectCauseListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for IMS call disconnect cause listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.MessageWaitingIndicatorListener.html">TelephonyCallback.MessageWaitingIndicatorListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for message waiting indicator listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.PhysicalChannelConfigListener.html">TelephonyCallback.PhysicalChannelConfigListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for current physical channel configuration listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.PreciseDataConnectionStateListener.html">TelephonyCallback.PreciseDataConnectionStateListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for precise data connection state listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.RegistrationFailedListener.html">TelephonyCallback.RegistrationFailedListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for registration failures listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.ServiceStateListener.html">TelephonyCallback.ServiceStateListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for service state listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.SignalStrengthsListener.html">TelephonyCallback.SignalStrengthsListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for network signal strengths listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyCallback.UserMobileDataStateListener.html">TelephonyCallback.UserMobileDataStateListener</a></td>
+            <td class="jd-descrcol" width="100%">
+              Interface for user mobile data state listener.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyDisplayInfo.html">TelephonyDisplayInfo</a></td>
             <td class="jd-descrcol" width="100%">
               TelephonyDisplayInfo contains telephony-related information used for display purposes only.&nbsp;
@@ -48886,7 +50151,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/telephony/TelephonyScanManager.NetworkScanCallback.html">TelephonyScanManager.NetworkScanCallback</a></td>
             <td class="jd-descrcol" width="100%">
               The caller of
- <code><a href="../reference/android/telephony/TelephonyManager.html#requestNetworkScan(android.telephony.NetworkScanRequest,%20java.util.concurrent.Executor,%20android.telephony.TelephonyScanManager.NetworkScanCallback)">TelephonyManager#requestNetworkScan(NetworkScanRequest, Executor, NetworkScanCallback)</a></code>
+ <code><a href="../reference/android/telephony/TelephonyManager.html#requestNetworkScan(android.telephony.NetworkScanRequest,%20java.util.concurrent.Executor,%20android.telephony.TelephonyScanManager.NetworkScanCallback)">TelephonyManager.requestNetworkScan(android.telephony.NetworkScanRequest, java.util.concurrent.Executor, android.telephony.TelephonyScanManager.NetworkScanCallback)</a></code>
  should implement and provide this callback so that the scan results or errors can be
  returned.&nbsp;
               
@@ -49026,6 +50291,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/java/time/temporal/TemporalUnit.html">TemporalUnit</a></td>
             <td class="jd-descrcol" width="100%">
               A unit of date-time, such as Days or Hours.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/TemporaryFailureException.html">TemporaryFailureException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown if the remote server declined a request because of a temporary issue.&nbsp;
               
     
 
@@ -51245,6 +52521,29 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/TransportModeChildSessionParams.html">TransportModeChildSessionParams</a></td>
+            <td class="jd-descrcol" width="100%">
+              TransportModeChildSessionParams represents proposed configurations for negotiating a transport
+ mode Child Session.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/TransportModeChildSessionParams.Builder.html">TransportModeChildSessionParams.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class can be used to incrementally construct a <code><a href="../reference/android/net/ipsec/ike/TransportModeChildSessionParams.html">TransportModeChildSessionParams</a></code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/TreeMap.html">TreeMap</a>&lt;K,&nbsp;V&gt;</td>
             <td class="jd-descrcol" width="100%">
               A Red-Black tree based <code><a href="../reference/java/util/NavigableMap.html">NavigableMap</a></code> implementation.&nbsp;
@@ -51328,6 +52627,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-descrcol" width="100%">
               This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
  for the <code>TrustManagerFactory</code> class.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/TsUnacceptableException.html">TsUnacceptableException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown if Traffic Selectors negotiation failed.&nbsp;
               
     
 
@@ -51505,6 +52815,106 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/text/style/TtsSpan.VerbatimBuilder.html">TtsSpan.VerbatimBuilder</a></td>
             <td class="jd-descrcol" width="100%">
               A builder for TtsSpans of type <code><a href="../reference/android/text/style/TtsSpan.html#TYPE_VERBATIM">TtsSpan.TYPE_VERBATIM</a></code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/TunnelModeChildSessionParams.html">TunnelModeChildSessionParams</a></td>
+            <td class="jd-descrcol" width="100%">
+              TunnelModeChildSessionParams represents proposed configurations for negotiating a tunnel mode
+ Child Session.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/TunnelModeChildSessionParams.Builder.html">TunnelModeChildSessionParams.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class can be used to incrementally construct a <code><a href="../reference/android/net/ipsec/ike/TunnelModeChildSessionParams.html">TunnelModeChildSessionParams</a></code>.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Address.html">TunnelModeChildSessionParams.ConfigRequestIpv4Address</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents an IPv4 Internal Address request&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4DhcpServer.html">TunnelModeChildSessionParams.ConfigRequestIpv4DhcpServer</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents an IPv4 DHCP server request&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4DnsServer.html">TunnelModeChildSessionParams.ConfigRequestIpv4DnsServer</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents an IPv4 DNS Server request&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Netmask.html">TunnelModeChildSessionParams.ConfigRequestIpv4Netmask</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents an IPv4 Netmask request&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6Address.html">TunnelModeChildSessionParams.ConfigRequestIpv6Address</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents an IPv6 Internal Address request&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6DnsServer.html">TunnelModeChildSessionParams.ConfigRequestIpv6DnsServer</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents an IPv6 DNS Server request&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/TunnelModeChildSessionParams.TunnelModeChildConfigRequest.html">TunnelModeChildSessionParams.TunnelModeChildConfigRequest</a></td>
+            <td class="jd-descrcol" width="100%">
+              Represents a tunnel mode child session configuration request type&nbsp;
               
     
 
@@ -52342,9 +53752,9 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/os/health/UidHealthStats.html">UidHealthStats</a></td>
             <td class="jd-descrcol" width="100%">
               Keys for <code><a href="../reference/android/os/health/HealthStats.html">HealthStats</a></code> returned from
- <code><a href="../reference/android/os/health/SystemHealthManager.html#takeUidSnapshot(int)">SystemHealthManager#takeUidSnapshot(int)</a></code>,
- <code><a href="../reference/android/os/health/SystemHealthManager.html#takeMyUidSnapshot()">SystemHealthManager#takeMyUidSnapshot()</a></code>, and
- <code><a href="../reference/android/os/health/SystemHealthManager.html#takeUidSnapshots(int[])">SystemHealthManager#takeUidSnapshots(int[])</a></code>.&nbsp;
+ <code><a href="../reference/android/os/health/SystemHealthManager.html#takeUidSnapshot(int)">SystemHealthManager.takeUidSnapshot(int)</a></code>,
+ <code><a href="../reference/android/os/health/SystemHealthManager.html#takeMyUidSnapshot()">SystemHealthManager.takeMyUidSnapshot()</a></code>, and
+ <code><a href="../reference/android/os/health/SystemHealthManager.html#takeUidSnapshots(int[])">SystemHealthManager.takeUidSnapshots(int[])</a></code>.&nbsp;
               
     
 
@@ -52383,6 +53793,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/icu/util/ULocale.html">ULocale</a></td>
             <td class="jd-descrcol" width="100%">
               <strong>[icu enhancement]</strong> ICU's replacement for <code><a href="../reference/java/util/Locale.html">Locale</a></code>.&nbsp;Methods, fields, and other functionality specific to ICU are labeled '<strong>[icu]</strong>'.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/icu/util/ULocale.AvailableType.html">ULocale.AvailableType</a></td>
+            <td class="jd-descrcol" width="100%">
+              Types for <code><a href="../reference/android/icu/util/ULocale.html#getAvailableLocalesByType(android.icu.util.ULocale.AvailableType)">ULocale#getAvailableLocalesByType</a></code>&nbsp;
               
     
 
@@ -52451,7 +53872,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/java/lang/reflect/UndeclaredThrowableException.html">UndeclaredThrowableException</a></td>
             <td class="jd-descrcol" width="100%">
               Thrown by a method invocation on a proxy instance if its invocation
- handler's <code><a href="../reference/java/lang/reflect/InvocationHandler.html#invoke(java.lang.Object,%20java.lang.reflect.Method,%20java.lang.Object[])">InvocationHandler#invoke</a></code> method throws a
+ handler's <code><a href="../reference/java/lang/reflect/InvocationHandler.html#invoke(java.lang.Object,%20java.lang.reflect.Method,%20java.lang.Object[])">invoke</a></code> method throws a
  checked exception (a <code>Throwable</code> that is not assignable
  to <code>RuntimeException</code> or <code>Error</code>) that
  is not assignable to any of the exception types declared in the
@@ -52588,6 +54009,19 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/test/suitebuilder/UnitTestSuiteBuilder.html">UnitTestSuiteBuilder</a></td>
+            <td class="jd-descrcol" width="100%">
+              <em>
+      This class is deprecated.
+    android.test.runner is obsolete</em>&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/android/icu/util/UniversalTimeScale.html">UniversalTimeScale</a></td>
             <td class="jd-descrcol" width="100%">
               There are quite a few different conventions for binary datetime, depending on different
@@ -52703,6 +54137,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/UnrecognizedIkeProtocolException.html">UnrecognizedIkeProtocolException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception represents an unrecognized error notification in a received response.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/java/security/UnrecoverableEntryException.html">UnrecoverableEntryException</a></td>
             <td class="jd-descrcol" width="100%">
               This exception is thrown if an entry in the keystore cannot be recovered.&nbsp;
@@ -52801,6 +54246,17 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
               Thrown when the Java Virtual Machine attempts to read a class
  file and determines that the major and minor version numbers
  in the file are not supported.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/ipsec/ike/exceptions/UnsupportedCriticalPayloadException.html">UnsupportedCriticalPayloadException</a></td>
+            <td class="jd-descrcol" width="100%">
+              This exception is thrown when payload type is not supported and critical bit is set&nbsp;
               
     
 
@@ -53636,6 +55092,94 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
     
     
         <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/vcn/VcnConfig.html">VcnConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class represents a configuration for a Virtual Carrier Network.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/vcn/VcnConfig.Builder.html">VcnConfig.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class is used to incrementally build <code><a href="../reference/android/net/vcn/VcnConfig.html">VcnConfig</a></code> objects.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/vcn/VcnControlPlaneConfig.html">VcnControlPlaneConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class represents a control plane configuration for a Virtual Carrier Network connection.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/vcn/VcnControlPlaneIkeConfig.html">VcnControlPlaneIkeConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class is an IKEv2 control plane configuration for a Virtual Carrier Network connection.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/vcn/VcnGatewayConnectionConfig.html">VcnGatewayConnectionConfig</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class represents a configuration for a connection to a Virtual Carrier Network gateway.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/vcn/VcnGatewayConnectionConfig.Builder.html">VcnGatewayConnectionConfig.Builder</a></td>
+            <td class="jd-descrcol" width="100%">
+              This class is used to incrementally build <code><a href="../reference/android/net/vcn/VcnGatewayConnectionConfig.html">VcnGatewayConnectionConfig</a></code> objects.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/vcn/VcnManager.html">VcnManager</a></td>
+            <td class="jd-descrcol" width="100%">
+              VcnManager publishes APIs for applications to configure and manage Virtual Carrier Networks.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
+            <td class="jd-linkcol"><a href="../reference/android/net/vcn/VcnManager.VcnStatusCallback.html">VcnManager.VcnStatusCallback</a></td>
+            <td class="jd-descrcol" width="100%">
+              VcnStatusCallback is the interface for Carrier apps to receive updates for their VCNs.&nbsp;
+              
+    
+
+            </td>
+        </tr>
+    
+    
+        <tr  >
             <td class="jd-linkcol"><a href="../reference/java/util/Vector.html">Vector</a>&lt;E&gt;</td>
             <td class="jd-descrcol" width="100%">
               The <code>Vector</code> class implements a growable array of
@@ -54369,7 +55913,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/view/ViewStructure.html">ViewStructure</a></td>
             <td class="jd-descrcol" width="100%">
               <p><code>ViewStructure</code> is a container for storing additional
- per-view data generated by <code><a href="../reference/android/view/View.html#onProvideStructure(android.view.ViewStructure)">View#onProvideStructure</a></code> and <code><a href="../reference/android/view/View.html#onProvideAutofillStructure(android.view.ViewStructure,%20int)">View#onProvideAutofillStructure</a></code>.&nbsp;
+ per-view data generated by <code><a href="../reference/android/view/View.html#onProvideStructure(android.view.ViewStructure)">View.onProvideStructure</a></code> and <code><a href="../reference/android/view/View.html#onProvideAutofillStructure(android.view.ViewStructure,%20int)">View.onProvideAutofillStructure</a></code>.&nbsp;
               
     
 
@@ -54670,7 +56214,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
             <td class="jd-linkcol"><a href="../reference/android/service/autofill/VisibilitySetterAction.html">VisibilitySetterAction</a></td>
             <td class="jd-descrcol" width="100%">
               Action used to change the visibility of other child view in a <code><a href="../reference/android/service/autofill/CustomDescription.html">CustomDescription</a></code>
- <code><a href="../reference/android/widget/RemoteViews.html">RemoteViews</a></code>.&nbsp;
+ <code><a href="../reference/android/widget/RemoteViews.html">presentation template</a></code>.&nbsp;
               
     
 
@@ -55243,7 +56787,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/android/service/quickaccesswallet/WalletServiceEvent.html">WalletServiceEvent</a></td>
             <td class="jd-descrcol" width="100%">
-              Represents a request from the <code><a href="../reference/android/service/quickaccesswallet/QuickAccessWalletService.html">QuickAccessWalletService</a></code> to the Quick Access
+              Represents a request from the <code><a href="../reference/android/service/quickaccesswallet/QuickAccessWalletService.html">wallet app</a></code> to the Quick Access
  Wallet in System UI.&nbsp;
               
     
@@ -55368,7 +56912,7 @@ href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
         <tr  >
             <td class="jd-linkcol"><a href="../reference/java/nio/file/WatchKey.html">WatchKey</a></td>
             <td class="jd-descrcol" width="100%">
-              A token representing the registration of a <code><a href="../reference/java/nio/file/Watchable.html">Watchable</a></code> object
+              A token representing the registration of a <code><a href="../reference/java/nio/file/Watchable.html">watchable</a></code> object
  with a <code><a href="../reference/java/nio/file/WatchService.html">WatchService</a></code>.&nbsp;
               
     
