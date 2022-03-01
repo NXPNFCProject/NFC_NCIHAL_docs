@@ -2552,24 +2552,9 @@ div.design-announce p {
 }
 
 .expandable {
-  height:34px;
+  height:auto;
   padding-left:20px;
   position:relative;
-}
-.expandable:before {
-  content: '';
-  background-image: url(../images/styles/disclosure_down.png);
-  background-repeat:no-repeat;
-  background-position: -12px -9px;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0; }
-}
-.expandable.expanded:before {
-  background-image: url(../images/styles/disclosure_up.png);
 }
 
 /* notice box for cross links between Design/Develop docs */
