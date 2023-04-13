@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.nxp.sems"},{"l":"com.nxp.sems.channel"},{"l":"com.nxp.sems.semscore"}]

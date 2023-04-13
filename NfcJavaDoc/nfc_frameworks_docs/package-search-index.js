@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"android.nfc"},{"l":"android.nfc.cardemulation"},{"l":"android.nfc.dta"},{"l":"android.nfc.tech"}]

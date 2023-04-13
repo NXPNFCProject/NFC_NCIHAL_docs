@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.nxp.nfc","l":"NfcConstants"},{"p":"com.nxp.nfc","l":"NxpNfcAdapter"},{"p":"com.nxp.nfc","l":"NxpWlcAdapter"}]
