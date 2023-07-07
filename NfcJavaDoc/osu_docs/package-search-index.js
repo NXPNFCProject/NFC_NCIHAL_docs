@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.nxp.osu"},{"l":"com.nxp.osu.channel"},{"l":"com.nxp.osu.jsbl.util"},{"l":"com.nxp.osu.modem"},{"l":"com.nxp.osu.osucore"},{"l":"com.nxp.osu.util"}]
